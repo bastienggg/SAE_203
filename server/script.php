@@ -78,6 +78,12 @@ if(isset($_REQUEST['action'])&& $_REQUEST['action']=='getmovies'){
   echo json_encode($card);
   exit();
 }
+if(isset($_REQUEST['action'])&& $_REQUEST['action']=='getmoviestrailer' && isset($_REQUEST['id_movies'])){
+  $id_movies = $_REQUEST['id_movies'];
+  $card_player = getMovieById($id_movies);
+  echo json_encode($card_player);
+  exit();
+}
 http_response_code(404);
 
 ?>

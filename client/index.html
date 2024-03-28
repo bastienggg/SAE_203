@@ -14,10 +14,14 @@
         
         <header>
             <button onclick="requestMovies()" class="btn" >ALL</button>
+            <button onclick="requestMoviesTrailer(2)" class="btn" >ALL</button>
+
+            
             <!-- <a href="#">ALL</a> -->
           </header>
           <main>
             <div class="cards"> <!-- contenu dynamique --></div>
+            <div class="player-card"> <!-- contenu dynamique --></div>
           </main>
 
           
@@ -31,10 +35,12 @@
             window.Menu = Menu;
         </script>
         <script type="module">
-            // on importe le composant Menu
             import {Card} from './component/card/script.js';
-            // on permet à Menu d'être accessible globalement (notamment par main.js)
             window.Card = Card;
+        </script>
+        <script type="module">
+            import {Player_card } from './component/player_card/script.js';
+            window.Player_card  = Player_card ;
         </script>
 
         <script src="./main.js"></script>
