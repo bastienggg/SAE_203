@@ -18,11 +18,14 @@ Importer le bon css pour l'index (fait)
 Revoir le template card (fait)
 
 script.php
-Loader tout les truc de film avec le action=getMovies
+Loader tout les truc de film avec le action=getMovies (fait)
 
 model.php
-plus de getMenue mais get Movies
-requete qui vas apparaitre "select \* from Movies"
+plus de getMenue mais get Movies (fait)
+requete qui vas apparaitre "select \* from Movies" (fait)
 
 10h - 14h55
 Creation du code permettant d'appeler tout les film grace a un boutton "ALL"
+
+16h
+Back office fonctionnel pour l'ajout de film

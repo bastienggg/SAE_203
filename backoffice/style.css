@@ -1,50 +1,47 @@
+@import "../client/css/base.css";
+
 body {
-    background-image: url('asset/bg.jpg');
-    background-size: cover;
+  background-image: url(https://i0.wp.com/images.frandroid.com/wp-content/uploads/2021/06/windows-11-wallpaper-fond-ecran-6-scaled.jpg?ssl=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: var(--clr-white);
+  font-family: "Roboto";
 }
 
 nav {
-    width:30rem;
-    margin-left:15rem;
-    margin-top: 4rem;
-    text-align: center;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 
-nav h1 {
-    font-size: xx-large;
+  margin: 3rem;
 }
-
 
 form {
-    width:30rem;
-    margin-left:15rem;
-    margin-top: 3em;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-form select {
-    font-size: medium;
-    border-style: none;
+h1 {
+  font-size: 6rem;
+  font-weight: 800;
 }
 
-form input, select {
-    margin-top: 1rem;
-    font-size: medium;
-    border-style: none;
-    display: inline-block;
-    height: 2rem;
+h2 {
+  font-size: 3rem;
 }
 
-form input[type=submit] {
-    background-color: rgb(151, 92, 36);
-    color:#fff;
-   
+h3 {
+  font-size: 2rem;
+  text-decoration: underline;
 }
 
-form h3 {
-    color:black;
-    border-bottom-style:solid;
-    border-width: 1px;
-    height: 1.5em;
+input {
+  padding: 0.75rem 2rem;
+  text-align: left;
 }

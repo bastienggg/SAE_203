@@ -57,6 +57,13 @@ function updateMenu($s, $j, $e, $p, $d){
     return $res;
 }
 
+function updateMovie($titre , $realisateur , $annee , $url_image , $url_trailer , $alt_image){
+    $cnx = new PDO("mysql:host=localhost;dbname=guitard25", "guitard25", "guitard25");
+    $answer = $cnx->query("replace into Movies set titre='$titre', realisateur='$realisateur', annee='$annee', url_image='$url_image', url_trailer='$url_trailer', alt_image='$alt_image'"); 
+    $res = $answer->rowCount();
+    return $res;
+}
+
 /*  deleteMenu
 
     . paramètre $s : le numéro de la semaine demandée

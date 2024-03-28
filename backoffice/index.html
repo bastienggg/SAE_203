@@ -1,63 +1,85 @@
 <html>
-    <head>
-        <title>Back Office</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
+  <head>
+    <title>Back Office</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <nav>
+        <h1>BACK OFFICE</h1>
+        <h2>Les Film disponible sur CANAL-</h2>
+      </nav>
 
-        <section>
+      <form method="GET" action="../server/script.php">
+        <h3>Mettre à jour ou ajouter un film</h3>
 
-            <nav> 
-                <h1>BACK OFFICE</h1>
-                <h2>Les menus de la semaine</h2>
-            </nav>
-            
-            <form method='GET' action="../server/script.php">
-               
-                <h3>Mettre à jour ou ajouter un menu</h3>
-           
-                <input type="number" id="semaine" onchange="autoCompleteMenu()" name="semaine" placeholder="semaine">
+        <!-- <input
+          type="number"
+          id="semaine"
+          onchange="autoCompleteMenu()"
+          name="semaine"
+          placeholder="semaine"
+        />
 
-                <select name="jour" id="jour" onchange="autoCompleteMenu()">
-                    <option value="lundi">Lundi</option>
-                    <option value="mardi">Mardi</option>
-                    <option value="mercredi">Mercredi</option>
-                    <option value="jeudi">Jeudi</option>
-                    <option value="vendredi">Vendredi</option>
-                    <option value="samedi">Samedi</option>
-                    <option value="dimanche">Dimanche</option>
-                </select>
+        <select name="jour" id="jour" onchange="autoCompleteMenu()">
+          <option value="lundi">Lundi</option>
+          <option value="mardi">Mardi</option>
+          <option value="mercredi">Mercredi</option>
+          <option value="jeudi">Jeudi</option>
+          <option value="vendredi">Vendredi</option>
+          <option value="samedi">Samedi</option>
+          <option value="dimanche">Dimanche</option>
+        </select>
 
-                <input type="text" name="entree" placeholder="Saisir une entrée">
-                <input type="text" name="plat" placeholder="Saisir un plat">
-                <input type="text" name="dessert" placeholder="Saisir un dessert">
-                
-                <input type="submit" value="Update" name="action">
+        <input type="text" name="entree" placeholder="Saisir une entrée" />
+        <input type="text" name="plat" placeholder="Saisir un plat" />
+        <input type="text" name="dessert" placeholder="Saisir un dessert" /> -->
 
-            </form>
+        <input type="text" name="titre" placeholder="Saisir un titre" />
+        <input
+          type="text"
+          name="realisateur"
+          placeholder="Saisir le realisateur du film"
+        />
+        <input type="text" name="annee" placeholder="Saisir l'annee du film" />
+        <input
+          type="text"
+          name="url_image"
+          placeholder="Saisir l'url de l'image du film"
+        />
+        <input
+          type="text"
+          name="url_trailer"
+          placeholder="Saisir l'url du trailer du film"
+        />
+        <input
+          type="text"
+          name="alt_image"
+          placeholder="Saisir l'attribu alt du l'image"
+        />
 
+        <input type="submit" value="Update" name="action" />
+      </form>
 
-            <form method='GET' action="../server/script.php">
+      <!-- <form method="GET" action="../server/script.php">
+        <h3>Supprimer un menu</h3>
+        <input type="number" name="semaine" placeholder="semaine" />
 
-                <h3>Supprimer un menu</h3>
-                <input type="number" name="semaine" placeholder="semaine">
+        <select name="jour">
+          <option value="lundi">Lundi</option>
+          <option value="mardi">Mardi</option>
+          <option value="mercredi">Mercredi</option>
+          <option value="jeudi">Jeudi</option>
+          <option value="vendredi">Vendredi</option>
+          <option value="samedi">Samedi</option>
+          <option value="dimanche">Dimanche</option>
+        </select>
 
-                <select name="jour">
-                    <option value="lundi">Lundi</option>
-                    <option value="mardi">Mardi</option>
-                    <option value="mercredi">Mercredi</option>
-                    <option value="jeudi">Jeudi</option>
-                    <option value="vendredi">Vendredi</option>
-                    <option value="samedi">Samedi</option>
-                    <option value="dimanche">Dimanche</option>
-                </select>
-
-                <input type="submit" value="Delete" name="action">
-
-            </form>
-
-        </section>
-        <script src="script.js"></script>
-    </body>
+        <input type="submit" value="Delete" name="action" />
+      </form> -->
+    </section>
+    <script src="script.js"></script>
+    <script src="../client/main.js"></script>
+  </body>
 </html>
