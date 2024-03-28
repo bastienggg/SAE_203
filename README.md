@@ -55,3 +55,6 @@ je reussit en avoir ma template qui aparait en fonction de l'id mis dans la fonc
 
 23h10
 j'arrive a load ma template designer correctement qui intergre la video youtube de trailler cepandant je la fait apparaire en bas de la page je ne sait pas comment je peux faire pour que cette template remplace l'ancienne...
+
+23h30
+creation de variable de style
