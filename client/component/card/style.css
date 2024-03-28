@@ -3,7 +3,7 @@ a {
 }
 
 .card__title {
-  color: var(--clr-fg);
+  color: var(--clr-headline);
   font-family: "Roboto";
   font-weight: 700;
   font-size: 2rem;
@@ -20,6 +20,7 @@ a {
 }
 .card__realisateur {
   margin-top: 0.5rem;
+  color: var(--clr-paragraph);
   font-family: "Roboto";
   text-align: left;
   font-size: 1rem;
@@ -28,6 +29,7 @@ a {
 
 .card__year {
   margin-top: 0rem;
+  color: var(--clr-paragraph);
   font-family: "Roboto";
   text-align: left;
   font-size: 1rem;

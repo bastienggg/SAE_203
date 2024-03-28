@@ -107,6 +107,10 @@ input:checked + .slider:before {
   visibility: hidden;
 } */
 
+body {
+  background-color: var(--clr-background);
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -117,8 +121,8 @@ header {
 .btn {
   height: min-content;
   padding: 1rem 7rem;
-  background-color: var(--clr-fg);
-  color: var(--clr-bg);
+  background-color: var(--clr-btn);
+  color: var(--clr-btn-txt);
   border-radius: 3rem;
   font-family: "Roboto";
   letter-spacing: 0.2rem;
@@ -126,6 +130,13 @@ header {
   text-align: center;
   font-size: 2rem;
   text-decoration: none;
+}
+
+.btn:hover {
+  color: var(--clr-btn);
+  background-color: var(--clr-tranparant);
+  border: solid 2px var(--clr-btn);
+  scale: 1.05;
 }
 
 .cards {
