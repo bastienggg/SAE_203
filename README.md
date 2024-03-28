@@ -23,3 +23,6 @@ Loader tout les truc de film avec le action=getMovies
 model.php
 plus de getMenue mais get Movies
 requete qui vas apparaitre "select \* from Movies"
+
+10h - 14h55
+Creation du code permettant d'appeler tout les film grace a un boutton "ALL"

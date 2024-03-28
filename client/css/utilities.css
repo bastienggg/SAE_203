@@ -1,4 +1,4 @@
-body {
+/* body {
     background-size: cover;
     background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url('../asset/bg.jpg');
 }
@@ -93,7 +93,7 @@ input:checked + .slider:before {
 }
 
 /* Rounded sliders */
-.slider.round {
+/* .slider.round {
   border-radius: 34px;
 }
 
@@ -105,4 +105,35 @@ input:checked + .slider:before {
 
 #app:has(input[type=checkbox]:checked) #days{
   visibility: hidden;
+} */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 8rem;
+}
+.btn {
+  height: min-content;
+  padding: 1rem 7rem;
+  background-color: var(--clr-fg);
+  color: var(--clr-bg);
+  border-radius: 3rem;
+  font-family: "Roboto";
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+
+  padding: 1.5rem;
 }
