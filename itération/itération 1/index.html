@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../client/css/base.css" />
+    <title>itération 1</title>
+  </head>
+  <body>
+    <style>
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 8rem;
+      }
+      .btn {
+        height: min-content;
+        padding: 1rem 7rem;
+        background-color: var(--clr-fg);
+        color: var(--clr-bg);
+        border-radius: 3rem;
+        font-family: "Roboto";
+        letter-spacing: 0.2rem;
+        font-weight: 700;
+        text-align: center;
+        font-size: 2rem;
+        text-decoration: none;
+      }
+      main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+      }
+      .card__title {
+        color: var(--clr-fg);
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 2rem;
+      }
+      .card:hover {
+        scale: 1.1;
+        transition: ease-in 0.5s;
+      }
+      .card__img {
+        border-radius: 0.5rem;
+      }
+    </style>
+    <header>
+      <a href="#" class="btn">ALL</a>
+    </header>
+    <main>
+      <div class="card">
+        <img
+          src="https://picsum.photos/340/183/?random=1"
+          alt=""
+          class="card__img"
+        />
+        <h2 class="card__title">Film 1</h2>
+      </div>
+    </main>
+  </body>
+</html>

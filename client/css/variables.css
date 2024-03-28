@@ -3,6 +3,10 @@
 :root {
   --clr-dark: hsl(253, 69%, 8%);
   --clr-white: hsl(0, 0%, 100%);
+  --clr-background-white: #e5e5e5;
 
   --ff-sans: "DM sans", sans-serif;
+
+  --clr-bg: var(--clr-background-white);
+  --clr-fg: var(--clr-dark);
 }
