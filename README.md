@@ -52,3 +52,6 @@ ff
 
 22h50
 je reussit en avoir ma template qui aparait en fonction de l'id mis dans la fonction qui se déclenche lors du onclick du bdeuxiéme boutton qui servait de test
+
+23h10
+j'arrive a load ma template designer correctement qui intergre la video youtube de trailler cepandant je la fait apparaire en bas de la page je ne sait pas comment je peux faire pour que cette template remplace l'ancienne...

@@ -5,8 +5,21 @@
   --clr-white: hsl(0, 0%, 100%);
   --clr-background-white: #e5e5e5;
 
+  --clr-background: #0f0e17;
+  --clr-headline: #fffffe;
+  --clr-paragraph: #a7a9be;
+  --clr-btn: #ff8906;
+  --clr-btn-txt: #fffffe;
+  --clr-stroke: black;
+  --clr-main: #fffffe;
+  --clr-highlight: #ff8906;
+  --clr-secondary: #f25f4c;
+  --clr-tertiary: #e53170;
+
+  --clr-transparant:rgba(0, 0, 0, 0.01)
+
   --ff-sans: "DM sans", sans-serif;
 
-  --clr-bg: var(--clr-background-white);
+  --clr-bg: var(--clr-background);
   --clr-fg: var(--clr-dark);
 }

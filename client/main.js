@@ -6,7 +6,7 @@ let requestMovies = async function () {
 let requestMoviesTrailer = async function (idmovies) {
   let response = await fetch("../server/script.php?action=getmoviestrailer&id_movies=" + idmovies);
   let data = await response.json();
-  Player_card.render('.player-card', data);
+  Player_card.render('.player-cards', data);
 }
 
 /*  requestMenu
