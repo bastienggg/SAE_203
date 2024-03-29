@@ -51,9 +51,9 @@ function getMovieByCategorie($id_categorie){
     avec le nouveau menu donné en paramètre pour le jour $j de la semaine $s.
 */
 
-function updateMovie($titre , $realisateur , $annee , $url_image , $url_trailer , $alt_image){
+function updateMovie($titre , $realisateur , $annee , $url_image , $url_trailer , $alt_image , $id_categorie){
     $cnx = new PDO("mysql:host=localhost;dbname=guitard25", "guitard25", "guitard25");
-    $answer = $cnx->query("replace into Movies set titre='$titre', realisateur='$realisateur', annee='$annee', url_image='$url_image', url_trailer='$url_trailer', alt_image='$alt_image'"); 
+    $answer = $cnx->query("replace into Movies set titre='$titre', realisateur='$realisateur', annee='$annee', url_image='$url_image', url_trailer='$url_trailer', alt_image='$alt_image', id_categorie='$id_categorie';"); 
     $res = $answer->rowCount();
     return $res;
 }

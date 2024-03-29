@@ -55,9 +55,10 @@ V.updateMovie = function (menu) {
   let input_titre = document.querySelector('input[name="titre"]');
   let input_realisateur = document.querySelector('input[name="realisateur"]');
   let input_annee = document.querySelector('input[name="annee"]');
-  let input_url_image = document.querySelector('input[name="annee"]');
-  let input_url_trailer = document.querySelector('input[name="annee"]');
-  let input_alt_image = document.querySelector('input[name="annee"]');
+  let input_url_image = document.querySelector('input[name="url_image"]');
+  let input_url_trailer = document.querySelector('input[name="url_trailer"]');
+  let input_alt_image = document.querySelector('input[name="alt_image"]');
+  let input_id_categorie = document.querySelector('input[name="id_categorie"]');
   // on met à jour les champs du formulaire
   input_titre.value = menu.titre;
   input_realisateur.value = menu.realisateur;
@@ -65,4 +66,5 @@ V.updateMovie = function (menu) {
   input_url_image.value = menu.url_image;
   input_url_trailer.value = menu.url_trailer;
   input_alt_image.value = menu.alt_image;
+  input_id_categorie.value = menu.id_categorie;
 }

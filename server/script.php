@@ -34,7 +34,8 @@ if (isset($_REQUEST['action']) && $_REQUEST['action']=='Update'){
   $url_image = $_REQUEST['url_image'];
   $url_trailer = $_REQUEST['url_trailer'];
   $alt_image = $_REQUEST['alt_image'];
-  $ok = updateMovie($titre , $realisateur , $annee , $url_image , $url_trailer , $alt_image);
+  $id_categorie=$_REQUEST['id_categorie'];
+  $ok = updateMovie($titre , $realisateur , $annee , $url_image , $url_trailer , $alt_image , $id_categorie);
   if ($ok>0){
     echo "Le film $titre est à jour";
   }
