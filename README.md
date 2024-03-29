@@ -62,3 +62,22 @@ creation de variable de style
 29 mars
 9h :
 LA deuxiéme itération fonctionne lorsque l'on clique sur une card cela nous met en display none les cards pour avoir que le trailer et incersement ca nous raffiche tout eles carte quand on reappuis sur le boutton "ALL".
+
+# Itération 3 Pouvoir filtrer l’affichage des films selon leur catégorie.
+
+9h10:
+TODO - front :
+Le menu permet désormais de choisir si l’on veut afficher tous les films ou bien uniquement les films d’une catégorie donnée (par exemple : Fantasy, Comedy, Sci-Fi, Animation, etc…) Vous pouvez par exemple ajouter des boutons ou bien utiliser un élément <select> pour que votre menu ne soit pas dépendant du nombre de catégories. Cette solution vous est recommandée. L’option “All” fait partie des options de votre <select> si l’utilisateur ne souhaite pas filtrer. Et c’est l’option par défaut.
+
+TODO - back :
+La partie serveur doit savoir répondre aux requêtes HTTP supplémentaires suivantes :
+script.php?action=getmovies&idcategory=45
+Il s’agit d’une adaptation du traitement de la première requête réalisé à la première itération. Soit la requête ne comporte pas de paramètre idcategory et dans ce cas, la réponse demeure l’ensemble des films de la base de données au format JSON. Par contre, si un paramètre idcategory est présent, alors on sélectionne uniquement les films qui sont de cette catégorie. Les données sont toujours transmises au format JSON.
+script.php?action=addmovie&idcategory=7&title=Interstellar&direction=christopher_nolan&...
+Il s’agit aussi d’une adaptation du traitement de la seconde requête réalisé à la première itération. Quand l’administrateur enregistre un nouveau film depuis le back office, le navigateur va transmettre, en plus des informations déjà traitées, un identifiant de catégorie. Vous devez en tenir compte et faire en sorte que ce dernier soit correctement enregistré dans la base de données.
+
+Base de données :
+La base de données doit être modifiée pour que chaque film soit associé à une (et une seule) catégorie. Via phpMyAdmin, vous ajouterez une table Category. Chaque catégorie sera caractérisée par :
+un identifiant unique
+un nom de catégorie
+Toujours via phpMyAdmin, vous ajouterez quelques catégories dans cette table, à minima celles qui correspondent aux films déjà enregistrés dans la table Movie.Vous ajouterez ensuite une colonne id_category à la table Movie. Cette colonne fait référence à un identifiant de catégorie présent dans la table Category.
