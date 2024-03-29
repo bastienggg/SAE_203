@@ -17,6 +17,25 @@ let requestMoviesTrailer = async function (idmovies) {
   Player_card.render('.player-cards', data);
 }
 
+let requestMoviesByCategorie = async function (idcategorie) {
+  let response = await fetch("../server/script.php?action=getmoviescategorie&id_categorie=" + idcategorie);
+  let data = await response.json();
+  Card.render('.cards', data);
+}
+
+
+function selectCategorie() {
+  var selectElement = document.getElementById("mySelect");
+  var selectedValue = selectElement.value;
+  if (selectedValue == 'all') {
+    requestMovies();
+  }
+  else {
+    requestMoviesByCategorie(selectedValue);
+  }
+  // Appeler d'autres fonctions ou exécuter d'autres actions en fonction de l'option sélectionnée
+}
+
 /*  requestMenu
 
   . paramètre j : le nom d'un jour de la semaine 

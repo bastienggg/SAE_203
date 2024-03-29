@@ -84,6 +84,15 @@ if(isset($_REQUEST['action'])&& $_REQUEST['action']=='getmoviestrailer' && isset
   echo json_encode($card_player);
   exit();
 }
+
+
+if(isset($_REQUEST['action'])&& $_REQUEST['action']=='getmoviescategorie' && isset($_REQUEST['id_categorie'])){
+  $id_categorie = $_REQUEST['id_categorie'];
+  $card_player = getMovieByCategorie($id_categorie);
+  echo json_encode($card_player);
+  exit();
+}
+
 http_response_code(404);
 
 ?>

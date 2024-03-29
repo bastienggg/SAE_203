@@ -13,7 +13,15 @@
 
         
         <header>
-            <button onclick="requestMovies()" class="btn" >ALL</button>
+            <select id="mySelect" onchange="selectCategorie()">
+                <option value="all">ALL</option>
+                <option value="guerre">Guerre</option>
+                <option value="fiction">Fiction</option>
+                <option value="drame">Drame</option>
+                <option value="documentaire">Documentaire</option>
+              </select>
+
+            <button  class="btn" onclick="requestMovies()">ALL</button>
             <!-- <button onclick="requestMoviesTrailer(2)" class="btn" >ALL</button> -->
 
             

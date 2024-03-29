@@ -37,6 +37,12 @@ function getMovieById($id_movies){
     return $res;
 }
 
+function getMovieByCategorie($id_categorie){
+    $cnx = new PDO("mysql:host=localhost;dbname=guitard25", "guitard25", "guitard25");
+    $answer = $cnx->query("SELECT Movies.*, Movies_categories.categorie AS categorie FROM Movies JOIN Movies_categories ON Movies.id_categorie = Movies_categories.id_categorie WHERE categorie='$id_categorie';"); 
+    $res = $answer->fetchAll(PDO::FETCH_OBJ);
+    return $res;
+}
 
 /*  updateMovie
     > valeur de retour : le nombre de ligne modifié dans Repas (donc 1 si tout va bien, 0 sinon)

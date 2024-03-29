@@ -81,3 +81,13 @@ La base de données doit être modifiée pour que chaque film soit associé à u
 un identifiant unique
 un nom de catégorie
 Toujours via phpMyAdmin, vous ajouterez quelques catégories dans cette table, à minima celles qui correspondent aux films déjà enregistrés dans la table Movie.Vous ajouterez ensuite une colonne id_category à la table Movie. Cette colonne fait référence à un identifiant de catégorie présent dans la table Category.
+
+9h50:
+base de données modifier qui fonctionne avec la clef etrangére qui fait reference a unecatégorie dans une table Movies_catégories
+
+10h20:
+j'arrive a lancer une fonction en particuler par rapport au select
+
+11h10:
+Fin de la partie client
+debut du bac office
