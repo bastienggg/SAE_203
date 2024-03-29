@@ -1,11 +1,19 @@
 let requestMovies = async function () {
   let response = await fetch("../server/script.php?action=getmovies");
   let data = await response.json();
+  let d1 = document.getElementById("cards");
+  let d2 = document.getElementById("player-cards");
+  d1.style.display = "flex";
+  d2.style.display = "none";
   Card.render('.cards', data);
 }
 let requestMoviesTrailer = async function (idmovies) {
   let response = await fetch("../server/script.php?action=getmoviestrailer&id_movies=" + idmovies);
   let data = await response.json();
+  let d1 = document.getElementById("cards");
+  let d2 = document.getElementById("player-cards");
+  d1.style.display = "none";
+  d2.style.display = "flex";
   Player_card.render('.player-cards', data);
 }
 

@@ -58,3 +58,7 @@ j'arrive a load ma template designer correctement qui intergre la video youtube 
 
 23h30
 creation de variable de style
+
+29 mars
+9h :
+LA deuxiéme itération fonctionne lorsque l'on clique sur une card cela nous met en display none les cards pour avoir que le trailer et incersement ca nous raffiche tout eles carte quand on reappuis sur le boutton "ALL".
