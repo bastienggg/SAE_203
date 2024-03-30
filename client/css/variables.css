@@ -19,7 +19,9 @@
   --clr-transparant:rgba(0, 0, 0, 0.01)
 
   --ff-sans: "DM sans", sans-serif;
+  --ff :'roboto';
 
   --clr-bg: var(--clr-background);
   --clr-fg: var(--clr-dark);
+
 }

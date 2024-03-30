@@ -1,15 +1,17 @@
 @import "../client/css/base.css";
 
 body {
-  background-image: url(https://i0.wp.com/images.frandroid.com/wp-content/uploads/2021/06/windows-11-wallpaper-fond-ecran-6-scaled.jpg?ssl=1);
+  /* background-image: url(https://i0.wp.com/images.frandroid.com/wp-content/uploads/2021/06/windows-11-wallpaper-fond-ecran-6-scaled.jpg?ssl=1);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+
+  background-color: var(--clr-background);
 
   color: var(--clr-white);
-  font-family: "Roboto";
+  font-family: var(--ff);
 }
 
-nav {
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,12 +26,13 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 h1 {
   font-size: 6rem;
   font-weight: 800;
+  color: var(--clr-tertiary);
 }
 
 h2 {
@@ -42,6 +45,50 @@ h3 {
 }
 
 input {
-  padding: 0.75rem 2rem;
+  width: 30rem;
+  padding: 1rem 4rem 1rem 1rem;
   text-align: left;
+  border-radius: 0.5rem;
+  background-color: var(--clr-transparant);
+  border: solid 2px var(--clr-paragraph);
+  color: var(--clr-white);
+}
+
+select {
+  width: 30rem;
+  padding: 1rem 4rem 1rem 1rem;
+  background: var(--clr-transparant);
+  border-color: var(--clr-paragraph);
+  color: white;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+}
+
+/* <option> colors */
+option {
+  font-family: "roboto";
+  font-size: 1.5rem;
+  color: var(--clr-background);
+  background-color: var(--clr-white);
+}
+
+.update {
+  padding: 1rem;
+  background-color: var(--clr-tertiary);
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.update:hover {
+  background-color: var(--clr-transparant);
+  scale: 1.05;
+  transition: ease-in-out 0.2s;
+  border: solid 2px var(--clr-tertiary);
+  color: var(--clr-tertiary);
+  cursor: pointer;
 }

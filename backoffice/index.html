@@ -6,35 +6,13 @@
   </head>
   <body>
     <section>
-      <nav>
+      <header>
         <h1>BACK OFFICE</h1>
-        <h2>Les Film disponible sur CANAL-</h2>
-      </nav>
+        <h2>Les Films disponibles sur CANAL-</h2>
+      </header>
 
       <form method="GET" action="../server/script.php">
-        <h3>Mettre à jour ou ajouter un film</h3>
-
-        <!-- <input
-          type="number"
-          id="semaine"
-          onchange="autoCompleteMenu()"
-          name="semaine"
-          placeholder="semaine"
-        />
-
-        <select name="jour" id="jour" onchange="autoCompleteMenu()">
-          <option value="lundi">Lundi</option>
-          <option value="mardi">Mardi</option>
-          <option value="mercredi">Mercredi</option>
-          <option value="jeudi">Jeudi</option>
-          <option value="vendredi">Vendredi</option>
-          <option value="samedi">Samedi</option>
-          <option value="dimanche">Dimanche</option>
-        </select>
-
-        <input type="text" name="entree" placeholder="Saisir une entrée" />
-        <input type="text" name="plat" placeholder="Saisir un plat" />
-        <input type="text" name="dessert" placeholder="Saisir un dessert" /> -->
+        <h3>Mettre à jour ou ajouter un film :</h3>
 
         <input type="text" name="titre" placeholder="Saisir un titre" />
         <input
@@ -63,9 +41,12 @@
           <option value="2">Fiction</option>
           <option value="3">Drame</option>
           <option value="4">Documentaire</option>
+          <option value="5">Aventure</option>
+          <option value="6">Horreur</option>
+          <option value="7">Comédie</option>
         </select>
 
-        <input type="submit" value="Update" name="action" />
+        <input class="update" type="submit" value="Update" name="action" />
       </form>
 
       <!-- <form method="GET" action="../server/script.php">
