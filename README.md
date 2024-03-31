@@ -97,3 +97,16 @@ un peu de css
 
 30 mars:
 ajout de film a la base de données
+
+# Itération 4 Avoir des profils utilisateur.
+
+31 mars
+
+13h
+TODO:
+Site vitrine:
+Un (autre) élément <select> permet de choisir un des profils utilisateur présents dans la base de données. Le profil sélectionné sera le profil “actif” (voir itération 5).
+backoffice:
+Un second formulaire permet à l’administrateur d’ajouter un profil utilisateur à la base de données. Vous pouvez ajouter ce second formulaire sur la même page ou si vous préférez, sur une seconde. Dans ce dernier cas, vous prévoyez un petit menu de navigation basique (de simples liens <a>) pour aller d’un formulaire à un autre.
+
+ajout de la table userprofil a la base de donne qui contient un id_user ainsi que le pseudo de l'utilsateur.
