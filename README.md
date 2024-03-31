@@ -114,3 +114,17 @@ ajout de la table userprofil a la base de donne qui contient un id_user ainsi qu
 15h
 itération 4 fini
 le select sur la page client pour choisir le profil est dynamique
+
+# Itération 5 Avoir une liste de lecture par profil utilisateur
+
+TODO:
+Site vitrine :
+Première modification : Lorsque l’interface présente des films, faites apparaître pour chacun d’eux un symbole “+” (ou autre). Cliquer sur “+” ajoute un film à la playlist de l’utilisateur dont le profil est actif (sélectionné).
+Seconde modification : Votre interface doit présenter un menu supplémentaire que l’on appellera “Playlist”. Lorsque l’on clique dessus, les films que l’on a déjà ajoutés à sa playlist apparaissent dans la zone d’affichage. La présentation peut être la même que pour afficher n’importe quel film sauf qu’il n’y a plus de symbole “+” (on ne va pas ajouter une playlist des films qui s’y trouvent déjà…)
+
+Base de données :
+Vous devez modifier votre base de données afin de pouvoir enregistrer les données d’une playlist pour chaque profil utilisateur. Vous êtes dans le cas “classique” d’une association entre la table UserProfile et la table Movie. Cette association peut être nommée Playlist. Elle associe un identifiant de profil à un identifiant de film. Playlist est une association “Many-To-Many” au sens où un profil peut être associé à plusieurs films (c’est mieux si on veut plus d’un film dans sa playlist) et un film peut être associé à plusieurs profils (c’est mieux si on veut qu’un film puisse se trouver plusieurs playlist).
+
+Pour matérialiser cette association, créez une table Playlist avec une colonne id_profile qui référence un identifiant de profil et une colonne id_movie qui référence un identifiant de film. N’oubliez pas de définir sa clé primaire.
+
+Backoffice rien a changer:
