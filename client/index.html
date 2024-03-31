@@ -13,15 +13,21 @@
 
         
         <header>
+
+            <select class="select-profil" name="" id="" onfocus="requestProfil()">
+                
+            </select>
+
+
             <select class="select-categorie" id="mySelect" onchange="selectCategorie()">
                 <option class="select-categorie__option"  value="all">ALL</option>
-                <option class="select-categorie__option value="guerre">Guerre</option>
-                <option class="select-categorie__option value="fiction">Fiction</option>
-                <option class="select-categorie__option value="drame">Drame</option>
-                <option class="select-categorie__option value="documentaire">Documentaire</option>
-                <option class="select-categorie__option value="aventure">Aventure</option>
-                <option class="select-categorie__option value="horreur">Horreur</option>
-                <option class="select-categorie__option value="comedie">Comedie</option>
+                <option class="select-categorie__option" value="guerre">Guerre</option>
+                <option class="select-categorie__option" value="fiction">Fiction</option>
+                <option class="select-categorie__option" value="drame">Drame</option>
+                <option class="select-categorie__option" value="documentaire">Documentaire</option>
+                <option class="select-categorie__option" value="aventure">Aventure</option>
+                <option class="select-categorie__option" value="horreur">Horreur</option>
+                <option class="select-categorie__option" value="comedie">Comedie</option>
               </select>
 
             <button  class="btn" onclick="requestMovies()">ALL</button>
@@ -31,6 +37,7 @@
             <!-- <a href="#">ALL</a> -->
           </header>
           <main>
+            <!-- <div class="select-profil"></div> -->
             <div class="player-cards" id="player-cards"> <!--contenu dynamique--></div>
             <div class="cards" id="cards"> <!-- contenu dynamique --></div>
             
@@ -54,7 +61,10 @@
             import {Player_card } from './component/player_card/script.js';
             window.Player_card  = Player_card ;
         </script>
-
+        <script type="module">
+            import {Option_profil } from './component/option_profil/script.js';
+            window.Option_profil  = Option_profil ;
+        </script>
         <script src="./main.js"></script>
     </body>
 </html>

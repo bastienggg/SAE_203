@@ -36,6 +36,30 @@ function selectCategorie() {
   // Appeler d'autres fonctions ou exécuter d'autres actions en fonction de l'option sélectionnée
 }
 
+
+let requestProfil = async function () {
+  let response = await fetch("../server/script.php?action=getprofil");
+  let data = await response.json();
+  Option_profil.render('.select-profil', data);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  requestMenu
 
   . paramètre j : le nom d'un jour de la semaine 

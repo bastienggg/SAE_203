@@ -91,3 +91,31 @@ option {
   color: var(--clr-tertiary);
   cursor: pointer;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+a {
+  text-transform: uppercase;
+  margin: 1rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: var(--clr-tertiary);
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+a:hover {
+  background-color: var(--clr-transparant);
+  scale: 1.05;
+  transition: ease-in-out 0.2s;
+  border: solid 2px var(--clr-tertiary);
+  color: var(--clr-tertiary);
+  cursor: pointer;
+}

@@ -182,3 +182,18 @@ header {
   color: var(--clr-background);
   background-color: var(--clr-white);
 }
+
+.select-profil {
+  margin: 2rem;
+  font-family: var(--ff);
+  width: 20rem;
+  padding: 1rem 4rem 1rem 1rem;
+  background: var(--clr-transparant);
+  border-color: var(--clr-paragraph);
+  color: white;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+.select-profil:focus {
+  outline: none;
+}

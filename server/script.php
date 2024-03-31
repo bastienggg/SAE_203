@@ -27,7 +27,7 @@ require("model.php");
 // }
 
 
-if (isset($_REQUEST['action']) && $_REQUEST['action']=='Update'){
+if (isset($_REQUEST['action']) && $_REQUEST['action']=='Update-Movie'){
   $titre = $_REQUEST['titre'];
   $realisateur = $_REQUEST['realisateur'];
   $annee = $_REQUEST['annee'];
@@ -38,6 +38,18 @@ if (isset($_REQUEST['action']) && $_REQUEST['action']=='Update'){
   $ok = updateMovie($titre , $realisateur , $annee , $url_image , $url_trailer , $alt_image , $id_categorie);
   if ($ok>0){
     echo "Le film $titre est à jour";
+  }
+  else{
+    echo "Un problème est survenu";
+  }
+  exit(); // termine le script (ce qui est en dessous ne s'exécutera pas)
+}
+
+if (isset($_REQUEST['action']) && $_REQUEST['action']=='Update-profil'){
+  $user_name = $_REQUEST['profil'];
+  $ok = updateProfil($user_name);
+  if ($ok>0){
+    echo "Le profil $user_name est a jour";
   }
   else{
     echo "Un problème est survenu";
@@ -94,6 +106,11 @@ if(isset($_REQUEST['action'])&& $_REQUEST['action']=='getmoviescategorie' && iss
   exit();
 }
 
+if(isset($_REQUEST['action'])&& $_REQUEST['action']=='getprofil'){
+  $user_profil = getProfil();
+  echo json_encode($user_profil);
+  exit();
+}
 http_response_code(404);
 
 ?>

@@ -110,3 +110,7 @@ backoffice:
 Un second formulaire permet à l’administrateur d’ajouter un profil utilisateur à la base de données. Vous pouvez ajouter ce second formulaire sur la même page ou si vous préférez, sur une seconde. Dans ce dernier cas, vous prévoyez un petit menu de navigation basique (de simples liens <a>) pour aller d’un formulaire à un autre.
 
 ajout de la table userprofil a la base de donne qui contient un id_user ainsi que le pseudo de l'utilsateur.
+
+15h
+itération 4 fini
+le select sur la page client pour choisir le profil est dynamique

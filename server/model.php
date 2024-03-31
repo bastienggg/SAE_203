@@ -30,6 +30,13 @@ function getMovie(){
     return $res;
 }
 
+function getProfil(){
+    $cnx = new PDO("mysql:host=localhost;dbname=guitard25", "guitard25", "guitard25");
+    $answer = $cnx->query("select * from UserProfile"); 
+    $res = $answer->fetchAll(PDO::FETCH_OBJ);
+    return $res;
+}
+
 function getMovieById($id_movies){
     $cnx = new PDO("mysql:host=localhost;dbname=guitard25", "guitard25", "guitard25");
     $answer = $cnx->query("select * from Movies where id_movies='$id_movies'"); 
@@ -57,6 +64,14 @@ function updateMovie($titre , $realisateur , $annee , $url_image , $url_trailer 
     $res = $answer->rowCount();
     return $res;
 }
+function updateProfil($user_name){
+    $cnx = new PDO("mysql:host=localhost;dbname=guitard25", "guitard25", "guitard25");
+    $answer = $cnx->query("replace into UserProfile set user_name='$user_name';"); 
+    $res = $answer->rowCount();
+    return $res;
+}
+
+
 
 /*  deleteMenu
 

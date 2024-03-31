@@ -49,6 +49,11 @@ V.updateForm = function (menu) {
   input_dessert.value = menu.dessert;
 }
 
+V.updateProfil = function (menu) {
+  let input_profil = document.querySelector('input[name="profil"]');
+  input_profil.value = menu.user_name;
+}
+
 
 V.updateMovie = function (menu) {
   // on récupère les champs du formulaire
