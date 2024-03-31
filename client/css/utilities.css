@@ -117,6 +117,7 @@ header {
   margin-bottom: 8rem;
 }
 .btn {
+  margin: 2rem;
   height: min-content;
   padding: 1rem 7rem;
   background-color: var(--clr-btn);
@@ -158,4 +159,26 @@ header {
   gap: 5rem;
 
   padding: 1.5rem;
+}
+
+.select-categorie {
+  margin: 2rem;
+  font-family: var(--ff);
+  width: 20rem;
+  padding: 1rem 4rem 1rem 1rem;
+  background: var(--clr-transparant);
+  border-color: var(--clr-paragraph);
+  color: white;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+.select-categorie:focus {
+  outline: none;
+}
+
+.select-categorie__option {
+  font-family: var(--ff);
+  font-size: 1.5rem;
+  color: var(--clr-background);
+  background-color: var(--clr-white);
 }

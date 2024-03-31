@@ -68,7 +68,6 @@ select:focus {
   outline: none;
 }
 
-/* <option> colors */
 option {
   font-family: "roboto";
   font-size: 1.5rem;
