@@ -3,16 +3,16 @@
 import { loadTemplate } from '../../js/utils.js';
 
 /* on charge le template du composant Menu */
-let template = await loadTemplate('./component/card/template.html');
+let template = await loadTemplate('./component/cardMoin/template.html');
 
 /* on crée un objet Menu vide qui va symboliser notre composant */
-let Card = {};
+let CardMoin = {};
 
 /*  Menu.format
     @param obj: object, un objet JS contenant les données à injecter dans le template
     @return string, le template HTML formaté avec les données de l'objet
 */
-Card.format = function (obj) {
+CardMoin.format = function (obj) {
     let html = template;
     html = html.replace('{{titre}}', obj.titre);
     html = html.replace('{{url_image}}', obj.url_image);
@@ -20,7 +20,6 @@ Card.format = function (obj) {
     html = html.replace('{{url_trailer}}', obj.url_trailer);
     html = html.replace('{{realisateur}}', obj.realisateur);
     html = html.replace('{{annee}}', obj.annee);
-    html = html.replace('{{id_movies}}', obj.id_movies);
     html = html.replace('{{id_movies}}', obj.id_movies);
     return html;
 }
@@ -31,11 +30,11 @@ Card.format = function (obj) {
 
     Note : pour async et await, voir les explications dans le fichier js/utils.js
 */
-Card.render = async function (selector, data) {
+CardMoin.render = async function (selector, data) {
     // on formate un composant Menu pour chaque objet du tableau
     let html = '';
     for (let obj of data) {
-        html += Card.format(obj); // on concatène (mettre bout à bout) les HTML des composants formatés  
+        html += CardMoin.format(obj); // on concatène (mettre bout à bout) les HTML des composants formatés  
     }
     // on injecte le HTML dans le DOM
     let where = document.querySelector(selector); // on cible l'élément où injecter le HTML
@@ -43,7 +42,7 @@ Card.render = async function (selector, data) {
 }
 
 // on exporte le composant Menu pour pouvoir l'utiliser ailleurs dans un autre modules JS
-export { Card }
+export { CardMoin }
 
 // Note : seul Menu est exporté (et donc Menu.render et Menu.format)
 // La variable template n'est pas exportée, elle n'est donc pas accessible depuis l'extérieur (et c'est tant mieux)

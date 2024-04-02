@@ -10,11 +10,12 @@
 
     </head>
     <body>
+        
 
         
         <header>
 
-            <select class="select-profil" name="" id="" onfocus="requestProfil()">
+            <select id="select-profil" class="select-profil" name="" id="" onfocus="requestProfil()"  onchange="recupererValeurProfil()">
                 
             </select>
 
@@ -30,16 +31,17 @@
                 <option class="select-categorie__option" value="comedie">Comedie</option>
               </select>
 
-            <button  class="btn" onclick="requestMovies()">ALL</button>
+            <button  class="btn" onclick="requestMovies()">HOME</button>
+            <button  class="btn" onclick="requestPlaylist(profil)">Playlist</button>
             <!-- <button onclick="requestMoviesTrailer(2)" class="btn" >ALL</button> -->
 
             
             <!-- <a href="#">ALL</a> -->
           </header>
-          <main>
             <!-- <div class="select-profil"></div> -->
             <div class="player-cards" id="player-cards"> <!--contenu dynamique--></div>
             <div class="cards" id="cards"> <!-- contenu dynamique --></div>
+            <div class="cards-playlist" id="cards-playlist"> <!-- contenu dynamique --></div>
             
           </main>
 
@@ -48,23 +50,24 @@
         </section>
 
         <script type="module">
-            // on importe le composant Menu
             import {Menu} from './component/menu/script.js';
-            // on permet à Menu d'être accessible globalement (notamment par main.js)
             window.Menu = Menu;
-        </script>
-        <script type="module">
+
             import {Card} from './component/card/script.js';
             window.Card = Card;
-        </script>
-        <script type="module">
+
             import {Player_card } from './component/player_card/script.js';
             window.Player_card  = Player_card ;
-        </script>
-        <script type="module">
+
             import {Option_profil } from './component/option_profil/script.js';
             window.Option_profil  = Option_profil ;
+
+            import {CardMoin } from './component/cardMoin/script.js';
+            window.CardMoin  = CardMoin ;
         </script>
         <script src="./main.js"></script>
+        <script>
+        let profil = "0";
+        </script>
     </body>
 </html>

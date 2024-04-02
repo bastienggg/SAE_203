@@ -112,6 +112,13 @@ if(isset($_REQUEST['action'])&& $_REQUEST['action']=='getprofil'){
   exit();
 }
 
+if(isset($_REQUEST['action'])&& $_REQUEST['action']=='getplaylist'){
+  $id_user = $_REQUEST['id_user'];
+  $card_playlist = getPlaylist($id_user);
+  echo json_encode($card_playlist);
+  exit();
+}
+
 if(isset($_REQUEST['action'])&& $_REQUEST['action']=='addtoplaylist'){
   $id_movies = $_REQUEST['id_movies'];
   $id_user = $_REQUEST['id_user'];

@@ -160,6 +160,16 @@ header {
 
   padding: 1.5rem;
 }
+.cards-playlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+
+  padding: 1.5rem;
+}
 
 .select-categorie {
   margin: 2rem;

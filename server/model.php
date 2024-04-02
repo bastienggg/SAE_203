@@ -52,12 +52,35 @@ function getMovieByCategorie($id_categorie){
 }
 
 
+
+function getPlaylist($id_user){
+    $cnx = new PDO("mysql:host=localhost;dbname=guitard25", "guitard25", "guitard25");
+    $answer = $cnx->query("select * from Movies join Playlist on Movies.id_movies = Playlist.id_movies where Playlist.id_user = '$id_user'"); 
+    $res = $answer->fetchAll(PDO::FETCH_OBJ);
+    return $res;
+}
+
+
+
+
+
+
+
+
+
+
 function AddToPlaylist($id_movies , $id_user){
     $cnx = new PDO("mysql:host=localhost;dbname=guitard25", "guitard25", "guitard25");
     $answer = $cnx->query("insert into Playlist set id_movies='$id_movies', id_user='$id_user';"); 
     $res = $answer->fetchAll(PDO::FETCH_OBJ);
     return $res;
 }
+
+
+
+
+
+
 
 
 /*  updateMovie

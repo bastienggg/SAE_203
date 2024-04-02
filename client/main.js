@@ -1,10 +1,14 @@
+
+
 let requestMovies = async function () {
   let response = await fetch("../server/script.php?action=getmovies");
   let data = await response.json();
   let d1 = document.getElementById("cards");
   let d2 = document.getElementById("player-cards");
+  let d3 = document.getElementById("cards-playlist");
   d1.style.display = "flex";
   d2.style.display = "none";
+  d3.style.display = "none";
   Card.render('.cards', data);
 }
 let requestMoviesTrailer = async function (idmovies) {
@@ -12,8 +16,10 @@ let requestMoviesTrailer = async function (idmovies) {
   let data = await response.json();
   let d1 = document.getElementById("cards");
   let d2 = document.getElementById("player-cards");
+  let d3 = document.getElementById("cards-playlist");
   d1.style.display = "none";
   d2.style.display = "flex";
+  d3.style.display = "none";
   Player_card.render('.player-cards', data);
 }
 
@@ -36,19 +42,41 @@ function selectCategorie() {
   // Appeler d'autres fonctions ou exécuter d'autres actions en fonction de l'option sélectionnée
 }
 
+let requestPlaylist = async function (iduser) {
+  let response = await fetch("../server/script.php?action=getplaylist&id_user=" + iduser);
+  let data = await response.json();
+  let d1 = document.getElementById("cards");
+  let d2 = document.getElementById("player-cards");
+  let d3 = document.getElementById("cards-playlist");
+  d1.style.display = "none";
+  d2.style.display = "none";
+  d3.style.display = "flex";
+  CardMoin.render('.cards-playlist', data);
+}
+
+
+
+
+
+
+function recupererValeurProfil() {
+  var selectElement = document.getElementById("select-profil");
+  var selectedValue = selectElement.value;
+  profil = selectedValue;
+  console.log("La valeur sélectionnée est :", profil);
+}
 
 let requestProfil = async function () {
+  let selectElement = document.getElementById("select-profil");
+  profil = selectElement.value;
   let response = await fetch("../server/script.php?action=getprofil");
   let data = await response.json();
   Option_profil.render('.select-profil', data);
 }
 
 let AddToPlaylist = async function (idmovie, iduser) {
-  let response = await fetch("../server/script.php?action=addtoplaylist&id_movies=" + idmovie + "&id_user=" + iduser);
-  let data = await response.json();
-  Card.render('.cards', data);
+  await fetch("../server/script.php?action=addtoplaylist&id_movies=" + idmovie + "&id_user=" + iduser);
 }
-
 
 
 

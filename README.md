@@ -128,3 +128,10 @@ Vous devez modifier votre base de données afin de pouvoir enregistrer les donn�
 Pour matérialiser cette association, créez une table Playlist avec une colonne id_profile qui référence un identifiant de profil et une colonne id_movie qui référence un identifiant de film. N’oubliez pas de définir sa clé primaire.
 
 Backoffice rien a changer
+
+02 avril
+10h30:
+la fonction AddToPlaylist fonctionne
+
+15h20:
+fini

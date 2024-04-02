@@ -1,26 +1,25 @@
-<div class="card">
+<div class="card-moin">
   <!-- <a target="_blank" href="https://www.youtube.com/watch?v={{url_trailer}}"
     >
   </a> -->
   <img
     src="{{url_image}}"
     alt="{{alt_image}}"
-    class="card__img"
+    class="card-moin__img"
     onclick="requestMoviesTrailer('{{id_movies}}')"
   />
-  <div class="card__top">
-    <h2 class="card__title">{{titre}}</h2>
-    <div onclick="AddToPlaylist('{{id_movies}}',profil)">
+  <div class="card-moin__top">
+    <h2 class="card-moin__title">{{titre}}</h2>
+    <div class="card-moin__svg">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
         viewBox="0 0 24 24"
         fill="white"
-        class="card__plus"
       >
         <path
-          d="M12 4V20M20 12L4 12"
+          d="M6 18L18 6M6 6L18 18"
           stroke="white"
           stroke-width="2"
           stroke-linecap="round"
@@ -29,6 +28,6 @@
       </svg>
     </div>
   </div>
-  <p class="card__realisateur">{{realisateur}}</p>
-  <p class="card__year">{{annee}}</p>
+  <p class="card-moin__realisateur">{{realisateur}}</p>
+  <p class="card-moin__year">{{annee}}</p>
 </div>
