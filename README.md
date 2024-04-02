@@ -137,3 +137,6 @@ la fonction AddToPlaylist fonctionne
 fini
 
 # Itération 6 Pouvoir retirer un film de la liste de lecture d’un profil utilisateur
+
+15h30:
+fini
