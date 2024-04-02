@@ -78,6 +78,11 @@ let AddToPlaylist = async function (idmovie, iduser) {
   await fetch("../server/script.php?action=addtoplaylist&id_movies=" + idmovie + "&id_user=" + iduser);
 }
 
+let RemoveToPlaylist = async function (idmovie, iduser) {
+  await fetch("../server/script.php?action=removetoplaylist&id_movies=" + idmovie + "&id_user=" + iduser);
+  requestPlaylist(iduser)
+}
+
 
 
 

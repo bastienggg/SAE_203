@@ -127,6 +127,14 @@ if(isset($_REQUEST['action'])&& $_REQUEST['action']=='addtoplaylist'){
   exit();
 }
 
+if(isset($_REQUEST['action'])&& $_REQUEST['action']=='removetoplaylist'){
+  $id_movies = $_REQUEST['id_movies'];
+  $id_user = $_REQUEST['id_user'];
+  $card_player = RemoveToPlaylist($id_movies , $id_user);
+  echo json_encode($card_player);
+  exit();
+}
+
 
 http_response_code(404);
 

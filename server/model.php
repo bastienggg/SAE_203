@@ -76,6 +76,12 @@ function AddToPlaylist($id_movies , $id_user){
     return $res;
 }
 
+function RemoveToPlaylist($id_movies , $id_user){
+    $cnx = new PDO("mysql:host=localhost;dbname=guitard25", "guitard25", "guitard25");
+    $answer = $cnx->query("delete from Playlist where id_movies='$id_movies' and id_user='$id_user';"); 
+    $res = $answer->fetchAll(PDO::FETCH_OBJ);
+    return $res;
+}
 
 
 

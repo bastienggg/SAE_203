@@ -21,6 +21,7 @@ CardMoin.format = function (obj) {
     html = html.replace('{{realisateur}}', obj.realisateur);
     html = html.replace('{{annee}}', obj.annee);
     html = html.replace('{{id_movies}}', obj.id_movies);
+    html = html.replace('{{id_movies}}', obj.id_movies);
     return html;
 }
 /*  Menu.render
