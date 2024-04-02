@@ -140,3 +140,5 @@ fini
 
 15h30:
 fini
+
+# itération 7 Pouvoir supprimer un profil utilisateur depuis le back office.

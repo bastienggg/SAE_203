@@ -109,6 +109,12 @@ function updateProfil($user_name){
     return $res;
 }
 
+function DeleteProfil($user_name){
+    $cnx = new PDO("mysql:host=localhost;dbname=guitard25", "guitard25", "guitard25");
+    $answer = $cnx->query("DELETE FROM UserProfile WHERE `UserProfile`.`id_user` = '$user_name';"); 
+    $res = $answer->rowCount();
+    return $res;
+}
 
 
 

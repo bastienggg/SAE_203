@@ -136,6 +136,18 @@ if(isset($_REQUEST['action'])&& $_REQUEST['action']=='removetoplaylist'){
 }
 
 
+if (isset($_REQUEST['action']) && $_REQUEST['action']=='Delete-profil'){
+  $user_name = $_REQUEST['profil-delete'];
+  $ok = DeleteProfil($user_name);
+  if ($ok>0){
+    echo "Le profil qui a pour id : $user_name est supprimer";
+  }
+  else{
+    echo "Un problème est survenu";
+  }
+  exit(); // termine le script (ce qui est en dessous ne s'exécutera pas)
+}
+
 http_response_code(404);
 
 ?>

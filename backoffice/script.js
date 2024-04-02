@@ -73,3 +73,12 @@ V.updateMovie = function (menu) {
   input_alt_image.value = menu.alt_image;
   input_id_categorie.value = menu.id_categorie;
 }
+
+
+
+
+let requestProfilBackoffice = async function () {
+  let response = await fetch("../server/script.php?action=getprofil");
+  let data = await response.json();
+  Option_profil_backoffice.render('.select-profil', data);
+}

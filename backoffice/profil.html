@@ -23,8 +23,30 @@
           name="action"
         />
       </form>
+      <form method="GET" action="../server/script.php">
+        <h3>Supprimer un menu</h3>
+
+        <select
+          id="select-profil"
+          class="select-profil"
+          name="profil-delete"
+          onfocus="requestProfilBackoffice()"
+        ></select>
+
+        <input
+          class="update"
+          type="submit"
+          value="Delete-profil"
+          name="action"
+        />
+      </form>
     </section>
+    <script type="module"></script>
     <script src="script.js"></script>
+    <script type="module">
+      import { Option_profil_backoffice } from "./option_profil/script.js";
+      window.Option_profil_backoffice = Option_profil_backoffice;
+    </script>
     <script src="../client/main.js"></script>
   </body>
 </html>
