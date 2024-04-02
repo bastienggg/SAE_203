@@ -1,4 +1,3 @@
-/*  Composant Menu */
 
 /* on importe la fonction loadTemplate depuis le module /js/utils.js */
 import { loadTemplate } from '../../js/utils.js';

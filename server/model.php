@@ -51,6 +51,15 @@ function getMovieByCategorie($id_categorie){
     return $res;
 }
 
+
+function AddToPlaylist($id_movies , $id_user){
+    $cnx = new PDO("mysql:host=localhost;dbname=guitard25", "guitard25", "guitard25");
+    $answer = $cnx->query("insert into Playlist set id_movies='$id_movies', id_user='$id_user';"); 
+    $res = $answer->fetchAll(PDO::FETCH_OBJ);
+    return $res;
+}
+
+
 /*  updateMovie
     > valeur de retour : le nombre de ligne modifié dans Repas (donc 1 si tout va bien, 0 sinon)
 
@@ -70,6 +79,10 @@ function updateProfil($user_name){
     $res = $answer->rowCount();
     return $res;
 }
+
+
+
+
 
 
 

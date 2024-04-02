@@ -43,7 +43,11 @@ let requestProfil = async function () {
   Option_profil.render('.select-profil', data);
 }
 
-
+let AddToPlaylist = async function (idmovie, iduser) {
+  let response = await fetch("../server/script.php?action=addtoplaylist&id_movies=" + idmovie + "&id_user=" + iduser);
+  let data = await response.json();
+  Card.render('.cards', data);
+}
 
 
 

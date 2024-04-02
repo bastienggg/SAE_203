@@ -111,6 +111,16 @@ if(isset($_REQUEST['action'])&& $_REQUEST['action']=='getprofil'){
   echo json_encode($user_profil);
   exit();
 }
+
+if(isset($_REQUEST['action'])&& $_REQUEST['action']=='addtoplaylist'){
+  $id_movies = $_REQUEST['id_movies'];
+  $id_user = $_REQUEST['id_user'];
+  $card_player = AddToPlaylist($id_movies , $id_user);
+  echo json_encode($card_player);
+  exit();
+}
+
+
 http_response_code(404);
 
 ?>
