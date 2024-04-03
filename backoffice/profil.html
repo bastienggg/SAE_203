@@ -2,29 +2,24 @@
   <head>
     <title>Back Office - Movie</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
   <body>
     <section>
       <header>
-        <h1>BACK OFFICE</h1>
-        <h2>Gestion des profils</h2>
+        <h1 class="title">BACK OFFICE</h1>
+        <h2 class="h2">Gestion des profils</h2>
       </header>
 
       <form method="GET" action="../server/script.php">
-        <h3>Mettre à jour ou ajouter un profil:</h3>
+        <h3 class="h3">Mettre à jour ou ajouter un profil:</h3>
 
         <input type="text" name="profil" placeholder="Saisir un profil" />
 
-        <input
-          class="update"
-          type="submit"
-          value="Update-profil"
-          name="action"
-        />
+        <input class="btn" type="submit" value="Update-profil" name="action" />
       </form>
       <form method="GET" action="../server/script.php">
-        <h3>Supprimer un profil</h3>
+        <h3 class="h3">Supprimer un profil</h3>
 
         <select
           id="select-profil"
@@ -33,12 +28,7 @@
           onfocus="requestProfilBackoffice()"
         ></select>
 
-        <input
-          class="update"
-          type="submit"
-          value="Delete-profil"
-          name="action"
-        />
+        <input class="btn" type="submit" value="Delete-profil" name="action" />
       </form>
     </section>
     <script type="module"></script>

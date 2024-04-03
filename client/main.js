@@ -75,8 +75,9 @@ let requestProfil = async function () {
 }
 
 let AddToPlaylist = async function (idmovie, iduser) {
-  let d1 = document.getElementById("card__plus");
-  d1.style.fill = "#121629";
+  let svg = document.getElementById(idmovie);
+  console.log(svg);
+  svg.style.fill = "#121629";
   await fetch("../server/script.php?action=addtoplaylist&id_movies=" + idmovie + "&id_user=" + iduser);
 }
 

@@ -14,13 +14,11 @@
 
         
         <header>
+          <div>
+            <button  class="btn" onclick="requestMovies()">HOME</button>
 
-            <select id="select-profil" class="select" name="" id="" onfocus="requestProfil()"  onchange="recupererValeurProfil()">
-                
-            </select>
-
-
-            <select class="select" id="mySelect" onchange="selectCategorie()">
+          <button  class="btn" onclick="requestPlaylist(profil)">Playlist</button>
+          <select class="select" id="mySelect" onchange="selectCategorie()">
                 <option class="select__option"  value="all">ALL</option>
                 <option class="select__option" value="guerre">Guerre</option>
                 <option class="select__option" value="fiction">Fiction</option>
@@ -30,9 +28,16 @@
                 <option class="select__option" value="horreur">Horreur</option>
                 <option class="select__option" value="comedie">Comedie</option>
               </select>
+          </div>
+          
 
-            <button  class="btn" onclick="requestMovies()">HOME</button>
-            <button  class="btn" onclick="requestPlaylist(profil)">Playlist</button>
+            
+
+            <select id="select-profil" class="select select-profil" name="" id="" onfocus="requestProfil()"  onchange="recupererValeurProfil()">
+                
+            </select>
+
+            
             <!-- <button onclick="requestMoviesTrailer(2)" class="btn" >ALL</button> -->
 
             

@@ -1,13 +1,14 @@
 .card__title {
   margin: var(--margin-bottom);
-  color: var(--clr-stroke);
+  color: var(--clr-highlight);
   font-weight: var(--fw-h3);
   font-size: var(--fs-h3);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .card__description {
-  color: var(--clr-background);
+  color: var(--clr-paragraph);
   text-align: left;
   font-size: var(--fs-body);
   opacity: 0.9;
@@ -21,7 +22,7 @@
   padding: var(--padding-card);
 }
 
-.card:hover {
+.cardH:hover {
   scale: 1.1;
   transition: ease-in 0.2s;
 }
@@ -52,21 +53,37 @@
   width: 100%;
 }
 
+.card__svg {
+  display: flex;
+}
+
+.card__svg:hover {
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
+
 .h2 {
-  font-size: var(--fs-h2);
+  font-size: var(--fs-h1);
   font-weight: var(--fw-h2);
   margin: var(--margin-top);
+  color: var(--clr-paragraph);
 }
 
 .select {
-  margin: var(--margin-m);
-  font-family: var(--ff);
   width: 20rem;
+
+  margin: var(--margin-m);
   padding: var(--padding-select);
-  background: var(--clr-transparant);
-  border-color: var(--clr-paragraph);
-  color: var(--clr-secondary);
+
+  font-family: var(--ff);
+  font-weight: var(--fw_body);
+  font-size: var(--fs-body);
+
+  color: var(--clr-paragraph);
   border-radius: 0.25em;
+  border: solid 6px var(--clr-stroke);
+
+  background: var(--clr-transparant);
   cursor: pointer;
 }
 .select:focus {
@@ -75,20 +92,28 @@
 
 .select__option {
   margin: var(--margin-m);
-  font-family: var(--ff);
-  width: 20rem;
   padding: var(--padding-select);
-  background: var(--clr-transparant);
-  border-color: var(--clr-paragraph);
-  color: var(--clr-secondary);
+
+  width: 20rem;
+
+  font-family: var(--ff);
+  font-weight: var(--fw_body);
+  font-size: var(--fs-body);
+  color: var(--clr-paragraph);
+
+  background: var(--clr-background);
+
+  border: solid 2px var(--clr-stroke);
   border-radius: 0.25em;
   cursor: pointer;
 }
 
 .btn {
+  width: 20rem;
+  border: solid 6px var(--clr-stroke);
   margin: var(--margin-m);
+  padding: var(--padding-top-bot);
   height: min-content;
-  padding: var(--padding-btn);
   background-color: var(--clr-btn);
   color: var(--clr-btn-txt);
   border-radius: 3rem;
@@ -100,7 +125,7 @@
 }
 
 .btn:hover {
-  border: solid 2px var(--clr-btn);
+  border: solid 6px var(--clr-btn);
   background-color: var(--clr-transparant);
   color: var(--clr-btn);
   scale: 1.05;
