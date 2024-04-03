@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import "./variables.css";
 @import "./utilities.css";
+@import "./framework.css";
 
 @import "../component/menu/style.css";
 @import "../component/card/style.css";

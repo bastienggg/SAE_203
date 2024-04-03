@@ -5,21 +5,49 @@
   --clr-white: hsl(0, 0%, 100%);
   --clr-background-white: #e5e5e5;
 
-  --clr-background: #0f0e17;
+  /* color */
+
+  --clr-background: #232946;
   --clr-headline: #fffffe;
-  --clr-paragraph: #a7a9be;
-  --clr-btn: #ff8906;
-  --clr-btn-txt: #fffffe;
-  --clr-stroke: black;
-  --clr-main: #fffffe;
-  --clr-highlight: #ff8906;
-  --clr-secondary: #f25f4c;
-  --clr-tertiary: #e53170;
+  --clr-paragraph: #b8c1ec;
+  --clr-btn: #eebbc3;
+  --clr-btn-txt: #232946;
+  --clr-stroke: #121629;
+  --clr-main: #b8c1ec;
+  --clr-highlight: #eebbc3;
+  --clr-secondary: #fffffe;
+  --clr-tertiary: #eebbc3;
 
   --clr-transparant:rgba(0, 0, 0, 0.01)
 
+  /* font */
+
   --ff-sans: "DM sans", sans-serif;
   --ff :'roboto';
+
+  --fs-h1:3rem;
+  --fs-h2:2rem;
+  --fs-h3:1.5rem;
+  --fs-body:1.3rem;
+  --fs-body-xs:1rem;
+
+  --fw-h1:700;
+  --fw-h2:700;
+  --fw-h3:700;
+  --fw_body:400;
+  --fw-body-highlight:600;
+
+  /* margin */
+  --margin-none:0rem;
+  --margin-s:1rem;
+  --margin-m:2rem;
+  --margin-bottom:0rem 0rem 1rem 0rem;
+  --margin-top:1rem 0rem 0rem 0rem;
+
+  /* padding */
+  --padding-card:1rem;
+  --padding-select:1rem 4rem 1rem 1rem;
+  --padding-btn:1rem 7rem;
 
   --clr-bg: var(--clr-background);
   --clr-fg: var(--clr-dark);
