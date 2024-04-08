@@ -36,11 +36,11 @@
           </ul>
         </nav>
         <div onclick="requestMovies()" class="svg-container-logo hover-cursor">
-          <img src="../assets/svg/asset 0.svg" alt="" />
+          <img src="../asset/svg/asset 0.svg" alt="" />
         </div>
         <div class="header__right">
           <div class="svg-container-avatar hover-cursor">
-            <img src="../assets/svg/asset 2.svg" alt="" />
+            <img src="../asset/svg/asset 2.svg" alt="" />
           </div>
           <!-- <div class="svg-container-avatar hover-cursor"> -->
           <!-- <img src="../assets/svg/asset 4.svg" alt="" /> -->
@@ -55,7 +55,7 @@
           <!-- </div> -->
         </div>
       </header>
-      <section class="carrousel">
+      <section class="carrousel" id="carrousel">
         <div class="carrousel-container">
           <!-- a rendre dynamique -->
           <div class="carrousel__items-container">
@@ -90,8 +90,8 @@
           </div>
         </div>
       </section>
-      <section class="tv-direct">
-        <h1 class="tv-direct__titre">TV EN DIRECT | Notre Top 15 gratuit</h1>
+      <section class="tv-direct" id="section1">
+        <h3 class="titre-section">TV EN DIRECT | Notre Top 15 gratuit</h3>
         <div class="tv-direct__slider-container">
           <!-- a rendre dynamique -->
           <div class="tv-direct__slider-container-item hover-cursor">
@@ -136,15 +136,26 @@
           </div>
         </div>
       </section>
-      <button class="btn" onclick="requestMovies()">VOIRE NOS FILM</button>
-      <div class="cards" id="cards"><!-- contenu dynamique --></div>
+      <section class="nos-film"  id="section2">
+        <h3 class="titre-section">Nos film | Les films ajoutés récemment</h3>
+        <div class="nos-film__cards" id="cards"><!-- contenu dynamique --></div>
+      </section>
+      <div class="player-cards" id="player-cards"> 
+      <!-- <button class="btn" onclick="requestMovies()">VOIRE NOS FILM</button> -->
     </div>
     <script type="module">
       import { Option_profil } from "./component/option_profil/script.js";
       window.Option_profil = Option_profil;
       import { Card } from "./component/card/script.js";
       window.Card = Card;
+      import { Player_card } from "./component/player_card/script.js";
+      window.Player_card = Player_card;
+
+      requestMovies();
     </script>
     <script src="./main.js"></script>
+    <script>
+      let profil = "0";
+    </script>
   </body>
 </html>

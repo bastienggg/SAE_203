@@ -33,7 +33,7 @@
     @param filename: string, le chemin vers le fichier HTML à charger
     @return string, le contenu du fichier HTML (sous forme de chaîne de caractères)
 */
-let loadTemplate = async function(filename) {
+let loadTemplate = async function (filename) {
     // fetch est une fonction JS qui permet de lire un fichier
     // il faut attendre (await) que la lecture soit terminée avant de poursuivre
     // et d'être certain d'avoir le résultat de l'appel à fetch dans response
@@ -48,4 +48,4 @@ let loadTemplate = async function(filename) {
 
 
 // on exporte la fonction pour pouvoir les utiliser dans d'autres modules JS
-export { loadTemplate};
+export { loadTemplate };

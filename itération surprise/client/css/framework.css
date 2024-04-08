@@ -31,7 +31,7 @@ body {
 .burger {
   position: absolute;
   z-index: 10;
-  left: 3rem;
+  left: 1rem;
 }
 .burger:hover {
   cursor: pointer;
@@ -67,7 +67,7 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--clr-black);
 }
 .header__right {
@@ -119,8 +119,8 @@ input[type="checkbox"]:checked ~ .main-nav {
 }
 
 .svg-container-avatar {
-  width: 2rem;
-  height: 2rem;
+  width: 1.2rem;
+  height: 1.2rem;
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
@@ -128,15 +128,15 @@ input[type="checkbox"]:checked ~ .main-nav {
 
 .svg-container-logo {
   object-fit: cover;
-  width: 8rem;
-  height: 2rem;
+  width: 6rem;
+  height: 1.5rem;
 }
 
 .select {
-  width: 8rem;
+  width: 5rem;
 
-  margin: 1rem;
-  padding: 1rem;
+  margin: 1rem 0rem 1rem 1rem;
+  padding: 0.2rem;
   font-size: var(--fz-s);
 
   color: var(--clr-grey-1);
@@ -161,7 +161,7 @@ input[type="checkbox"]:checked ~ .main-nav {
 .carrousel__items-container {
   width: 100%;
   flex-shrink: 0;
-  animation: slider-1 20s infinite ease-in-out;
+  animation: slider-1 35s infinite ease-in-out;
 }
 
 @keyframes slider-1 {
@@ -186,10 +186,14 @@ input[type="checkbox"]:checked ~ .main-nav {
   }
 }
 
-.tv-direct__titre {
+.titre-section {
   padding: 1rem;
   color: var(--clr-grey-1);
   font-size: var(--fz-l);
+}
+
+.tv-direct {
+  margin: 2rem 0rem 2rem 0rem;
 }
 
 .tv-direct__slider-container {
@@ -219,5 +223,23 @@ input[type="checkbox"]:checked ~ .main-nav {
 @keyframes slider-2 {
   to {
     transform: translateX(-300%);
+  }
+}
+
+.nos-film__cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: hidden;
+  gap: 0.4rem;
+}
+
+.nos-film {
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+@keyframes slider-3 {
+  to {
+    transform: translateX(-1000%);
   }
 }

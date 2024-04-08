@@ -1,54 +1,11 @@
-.card__title {
-  margin: var(--margin-bottom);
-  color: var(--clr-highlight);
-  font-weight: var(--fw-h3);
-  font-size: var(--fs-h3);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.card__description {
-  color: var(--clr-paragraph);
-  text-align: left;
-  font-size: var(--fs-body);
-  opacity: 0.9;
-  margin: var(--margin-none);
-}
-
 .card {
-  background-color: var(--clr-main);
-  border: solid 6px var(--clr-stroke);
-  border-radius: 0.5rem;
-  padding: var(--padding-card);
+  flex-shrink: 0;
+  animation: slider-3 70s ease-in-out infinite alternate;
 }
-
-.cardH:hover {
-  scale: 1.1;
-  transition: ease-in 0.2s;
-}
-
 .card__img {
-  width: 21.25rem;
-  height: 11.5rem;
-  border-radius: 0.5rem;
+  width: 15rem;
+  height: 9rem;
 }
-.card__img:hover {
+.card:hover {
   cursor: pointer;
-}
-
-.card__svg:hover {
-  transition: 0.5s ease-in-out;
-  scale: 1.3;
-  cursor: pointer;
-}
-
-.card__bottom {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  margin: 1rem 0rem;
-
-  width: 100%;
 }

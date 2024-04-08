@@ -1,0 +1,28 @@
+.player-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.iframe {
+  height: 20rem;
+  width: 100%;
+}
+
+.card-player__playlist {
+  width: 80%;
+  padding: 1rem;
+  color: var(--clr-black);
+  background-color: var(--clr-grey-1);
+  border-radius: 3rem;
+}
+
+.card-player__titre {
+  width: 100%;
+  color: var(--clr-grey-1);
+  font-weight: 700;
+  text-align: left;
+}
