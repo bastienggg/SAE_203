@@ -43,7 +43,10 @@
             
             <!-- <a href="#">ALL</a> -->
           </header>
-            <!-- <div class="select-profil"></div> -->
+          <h1 class="title tendance-title">En Tendance</h1>
+          <div class="carroussel" id="carroussel">
+             <!-- contenu dynamique -->
+            </div>
             <div class="player-cards" id="player-cards"> <!--contenu dynamique--></div>
             <div class="cards" id="cards"> <!-- contenu dynamique --></div>
             <div class="cards-playlist" id="cards-playlist"> <!-- contenu dynamique --></div>
@@ -69,6 +72,9 @@
 
             import {CardMoin } from './component/cardMoin/script.js';
             window.CardMoin  = CardMoin ;
+            import {Carroussel } from './component/carroussel/script.js';
+            window.Carroussel  = Carroussel ;
+            Carroussel.render('.carroussel')
         </script>
         <script src="./main.js"></script>
         <script>

@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --clr-black: #000000;
+  --clr-grey-5: #101010;
+  --clr-grey-4: #333333;
+  --clr-grey-3: #848585;
+  --clr-grey-2: #c6c5c5;
+  --clr-grey-1: #f0f0f0;
+
+  --clr-red: #ff0000;
+
+  --clr-opacity-0: rgba(0, 0, 0, 0);
+  --clr-opacity-5: rgba(216, 216, 216, 0.05);
+  --clr-opacity-10: rgba(216, 216, 216, 0.1);
+  --clr-opacity-50: rgba(240, 240, 240, 0.5);
+  --clr-opacity-85: rgba(240, 240, 240, 0.85);
+
+  --ff-sans-serif: "Roboto";
+
+  --fz-s: 1rem;
+  --fz-m: 1.25rem;
+  --fz-l: 1.75rem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  --clr-dark: hsl(253, 69%, 8%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-background-white: #e5e5e5;
+
+  /* color */
+
+  --clr-background: #fffffe;
+  --clr-headline: #2b2c34;
+  --clr-paragraph: #2b2c34;
+  --clr-btn: #6246ea;
+  --clr-btn-txt: #fffffe;
+  --clr-stroke: #2b2c34;
+  --clr-main: #fffffe;
+  --clr-highlight: #6246ea;
+  --clr-secondary: #d1d1e9;
+  --clr-tertiary: #e45858;
+
+  --clr-transparant:rgba(0, 0, 0, 0.01)
+
+  /* font */
+
+  --ff-sans: "DM sans", sans-serif;
+  --ff :'roboto';
+
+  --fs-h1:3rem;
+  --fs-h2:2rem;
+  --fs-h3:1.5rem;
+  --fs-body:1.3rem;
+  --fs-body-xs:1rem;
+
+  --fw-h1:700;
+  --fw-h2:700;
+  --fw-h3:700;
+  --fw_body:400;
+  --fw-body-highlight:600;
+
+  /* margin */
+  --margin-none:0rem;
+  --margin-s:1rem;
+  --margin-m:2rem;
+  --margin-bottom:0rem 0rem 1rem 0rem;
+  --margin-top:1rem 0rem 0rem 0rem;
+
+  /* padding */
+  --padding-card:1rem;
+  --padding-select:1rem 4rem 1rem 1rem;
+  --padding-btn:1rem 7rem;
+  --padding-top-bot:1rem 0rem;
+
+  --clr-bg: var(--clr-background);
+  --clr-fg: var(--clr-dark);
+
+}

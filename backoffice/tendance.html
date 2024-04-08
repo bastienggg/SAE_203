@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Back Office - Movie</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1 class="title">BACK OFFICE</h1>
+        <h2 class="h2">Gestion des tendances</h2>
+      </header>
+      <form method="GET" action="../server/script.php">
+        <h3 class="h3">Gérer les tendances :</h3>
+
+        <select id="selectMovie" class="selectMovie1" name="movie1"></select>
+        <select id="selectMovie" class="selectMovie2" name="movie2"></select>
+        <select id="selectMovie" class="selectMovie3" name="movie3"></select>
+
+        <input
+          class="btn"
+          type="submit"
+          value="Gestion-tendance"
+          name="action"
+        />
+      </form>
+    </section>
+    <script type="module"></script>
+    <script src="script.js"></script>
+    <script type="module">
+      requestMoviesName();
+      import { OptionMovies } from "./option_movie/script.js";
+      window.OptionMovies = OptionMovies;
+    </script>
+    <script src="../client/main.js"></script>
+  </body>
+</html>

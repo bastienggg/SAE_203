@@ -82,3 +82,11 @@ let requestProfilBackoffice = async function () {
   let data = await response.json();
   Option_profil_backoffice.render('.select-profil', data);
 }
+
+let requestMoviesName = async function () {
+  let response = await fetch("../server/script.php?action=getMoviesName");
+  let data = await response.json();
+  OptionMovies.render('.selectMovie1', data);
+  OptionMovies.render('.selectMovie2', data);
+  OptionMovies.render('.selectMovie3', data);
+}

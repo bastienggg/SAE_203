@@ -1,0 +1,6 @@
+@import "./framework.css";
+@import "./reset.css";
+@import "./variable.css";
+
+@import "../component/option_profil/style.css";
+@import "../component/card/style.css";

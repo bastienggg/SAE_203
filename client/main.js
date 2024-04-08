@@ -6,9 +6,11 @@ let requestMovies = async function () {
   let d1 = document.getElementById("cards");
   let d2 = document.getElementById("player-cards");
   let d3 = document.getElementById("cards-playlist");
+  let d4 = document.getElementById("carroussel");
   d1.style.display = "flex";
   d2.style.display = "none";
   d3.style.display = "none";
+  d4.style.display = "flex";
   Card.render('.cards', data);
 }
 let requestMoviesTrailer = async function (idmovies) {
@@ -17,9 +19,11 @@ let requestMoviesTrailer = async function (idmovies) {
   let d1 = document.getElementById("cards");
   let d2 = document.getElementById("player-cards");
   let d3 = document.getElementById("cards-playlist");
+  let d4 = document.getElementById("carroussel");
   d1.style.display = "none";
   d2.style.display = "flex";
   d3.style.display = "none";
+  d4.style.display = "none";
   Player_card.render('.player-cards', data);
 }
 

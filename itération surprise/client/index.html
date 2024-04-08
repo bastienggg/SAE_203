@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rakuten TV</title>
+    <link rel="stylesheet" href="./css/base.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <input type="checkbox" id="toggle" />
+        <label for="toggle" class="burger">
+          <svg class="main-nav__svg" viewBox="0 0 32 32" width="32" height="32">
+            <rect class="rect-1" x="2" y="6" width="28" height="2"></rect>
+            <rect class="rect-2" x="2" y="15" width="28" height="2"></rect>
+            <rect class="rect-3" x="2" y="23" width="28" height="2"></rect>
+          </svg>
+        </label>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__link--active">
+              <a onclick="requestMovies()" href="#" class="main-nav__link"
+                >Accueil</a
+              >
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Boutique</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Gratuit</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">TV en direct</a>
+            </li>
+          </ul>
+        </nav>
+        <div onclick="requestMovies()" class="svg-container-logo hover-cursor">
+          <img src="../assets/svg/asset 0.svg" alt="" />
+        </div>
+        <div class="header__right">
+          <div class="svg-container-avatar hover-cursor">
+            <img src="../assets/svg/asset 2.svg" alt="" />
+          </div>
+          <!-- <div class="svg-container-avatar hover-cursor"> -->
+          <!-- <img src="../assets/svg/asset 4.svg" alt="" /> -->
+          <select
+            id="select-profil"
+            class="select select-profil"
+            name=""
+            id=""
+            onfocus="requestProfil()"
+            onchange="recupererValeurProfil()"
+          ></select>
+          <!-- </div> -->
+        </div>
+      </header>
+      <section class="carrousel">
+        <div class="carrousel-container">
+          <!-- a rendre dynamique -->
+          <div class="carrousel__items-container">
+            <img
+              src="../asset/img/carrousel/061332e7-bcfe-47ce-bc6c-9d752b5707d7-width2048-quality90.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="carrousel__items-container">
+            <img
+              src="../asset/img/carrousel/de392458-01d7-463c-9042-f62bffbf77a8-width2048-quality90.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="carrousel__items-container">
+            <img
+              src="../asset/img/carrousel/ed5f5498-d69a-485b-80c1-de9e7d67a0dd-width2048-quality90.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="carrousel__items-container">
+            <img
+              src="../asset/img/carrousel/f75d107a-6cd7-4880-b6f2-0a1c788f9241-width2048-quality90.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="carrousel__items-container">
+            <img
+              src="../asset/img/carrousel/061332e7-bcfe-47ce-bc6c-9d752b5707d7-width2048-quality90.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="tv-direct">
+        <h1 class="tv-direct__titre">TV EN DIRECT | Notre Top 15 gratuit</h1>
+        <div class="tv-direct__slider-container">
+          <!-- a rendre dynamique -->
+          <div class="tv-direct__slider-container-item hover-cursor">
+            <img
+              class="tv-direct__img"
+              src="../asset/img/direct/49f6b89bd291722c227e312eaa7d04e4380b4c0b7611bf68a82c328d2c00fcb9-width308-quality90 (1).webp"
+              alt=""
+            />
+            <p class="tv-direct__img-titre">Fréquence Novela</p>
+          </div>
+          <div class="tv-direct__slider-container-item hover-cursor">
+            <img
+              class="tv-direct__img"
+              src="../asset/img/direct/49f6b89bd291722c227e312eaa7d04e4380b4c0b7611bf68a82c328d2c00fcb9-width308-quality90 (2).webp"
+              alt=""
+            />
+            <p class="tv-direct__img-titre">Alerte Cobra</p>
+          </div>
+          <div class="tv-direct__slider-container-item hover-cursor">
+            <img
+              class="tv-direct__img"
+              src="../asset/img/direct/49f6b89bd291722c227e312eaa7d04e4380b4c0b7611bf68a82c328d2c00fcb9-width308-quality90 (3).webp"
+              alt=""
+            />
+            <p class="tv-direct__img-titre">Televisia</p>
+          </div>
+          <div class="tv-direct__slider-container-item hover-cursor">
+            <img
+              class="tv-direct__img"
+              src="../asset/img/direct/49f6b89bd291722c227e312eaa7d04e4380b4c0b7611bf68a82c328d2c00fcb9-width308-quality90 (4).webp"
+              alt=""
+            />
+            <p class="tv-direct__img-titre">Les route du paradis</p>
+          </div>
+          <div class="tv-direct__slider-container-item hover-cursor">
+            <img
+              class="tv-direct__img"
+              src="../asset/img/direct/49f6b89bd291722c227e312eaa7d04e4380b4c0b7611bf68a82c328d2c00fcb9-width308-quality90 (5).webp"
+              alt=""
+            />
+            <p class="tv-direct__img-titre">Les filles d'a côté</p>
+          </div>
+        </div>
+      </section>
+      <button class="btn" onclick="requestMovies()">VOIRE NOS FILM</button>
+      <div class="cards" id="cards"><!-- contenu dynamique --></div>
+    </div>
+    <script type="module">
+      import { Option_profil } from "./component/option_profil/script.js";
+      window.Option_profil = Option_profil;
+      import { Card } from "./component/card/script.js";
+      window.Card = Card;
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>
