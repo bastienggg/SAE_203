@@ -1,5 +1,3 @@
-
-
 let requestMovies = async function () {
   let response = await fetch("../server/script.php?action=getmovies");
   let data = await response.json();
@@ -43,7 +41,6 @@ function selectCategorie() {
   else {
     requestMoviesByCategorie(selectedValue);
   }
-  // Appeler d'autres fonctions ou exécuter d'autres actions en fonction de l'option sélectionnée
 }
 
 let requestPlaylist = async function (iduser) {
@@ -57,11 +54,6 @@ let requestPlaylist = async function (iduser) {
   d3.style.display = "flex";
   CardMoin.render('.cards-playlist', data);
 }
-
-
-
-
-
 
 function recupererValeurProfil() {
   var selectElement = document.getElementById("select-profil");

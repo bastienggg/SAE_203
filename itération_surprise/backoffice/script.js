@@ -6,17 +6,18 @@ V.updateProfil = function (data) {
   input_profil.value = data.user_name;
 }
 
+
 V.updateMovie = function (data) {
-  // on récupère les champs du formulaire
   let input_titre = document.querySelector('input[name="titre"]');
+  let input_description = document.querySelector('input[name="description"]');
   let input_realisateur = document.querySelector('input[name="realisateur"]');
   let input_annee = document.querySelector('input[name="annee"]');
   let input_url_image = document.querySelector('input[name="url_image"]');
   let input_url_trailer = document.querySelector('input[name="url_trailer"]');
   let input_alt_image = document.querySelector('input[name="alt_image"]');
   let input_id_categorie = document.querySelector('input[name="id_categorie"]');
-  // on met à jour les champs du formulaire
   input_titre.value = data.titre;
+  input_description.value = data.description;
   input_realisateur.value = data.realisateur;
   input_annee.value = data.annee;
   input_url_image.value = data.url_image;
@@ -37,4 +38,5 @@ let requestMoviesName = async function () {
   OptionMovies.render('.selectMovie1', data);
   OptionMovies.render('.selectMovie2', data);
   OptionMovies.render('.selectMovie3', data);
+  OptionMovies.render('.selectMovie4', data);
 }

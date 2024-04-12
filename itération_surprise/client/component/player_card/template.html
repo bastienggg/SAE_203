@@ -1,0 +1,22 @@
+<div class="player-card">
+  <iframe
+    class="iframe"
+    allow="autoplay"
+    width="100%"
+    height="auto"
+    src="https://www.youtube.com/embed/{{url_trailer}}?rel=0&autoplay=1&showinfo=0&modestbranding=1"
+    title=""
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+  <h2 class="card-player__titre">{{titre}}</h2>
+  <button
+    class="card-player__playlist"
+    onclick="AddToPlaylist('{{id_movies}}',profil)"
+  >
+    Ajouter ce film a votre playlist
+  </button>
+  <p class="card__description">{{description}}</p>
+</div>

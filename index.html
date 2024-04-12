@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Page pour pouvoir acceder au site client , au backoffice ainsi qu'au rapport du serveur"
+    />
+    <title>Coming Soon</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        color: #333;
+      }
+      .container {
+        text-align: center;
+        margin: 100px auto;
+      }
+      h1 {
+        font-size: 3em;
+        margin-bottom: 30px;
+        color: #007bff;
+      }
+      p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+      }
+      .countdown {
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Coming Soon</h1>
+      <p>Notre site sera bientôt disponible. Restez à l'écoute !</p>
+      <div class="countdown">
+        <p id="countdown"></p>
+      </div>
+      <a href="./client/index.html">Mon site</a>
+    </div>
+
+    <script>
+      // Date de lancement du site (modifiable)
+      var launchDate = new Date("2024-04-12T12:00:00Z");
+
+      function updateCountdown() {
+        var now = new Date();
+        var distance = launchDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML =
+          days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
+      }
+
+      // Mise à jour toutes les secondes
+      setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Backoffice - Rakuten TV|profil</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="PAge pour pourvoir gérer les profil utilisateur"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://prod-kuato.rakuten.tv/favicon.ico"
+    />
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="./index.html" class="title">BACK OFFICE</a>
+        <h2 class="h2">Gestion des profils</h2>
+      </header>
+
+      <form method="GET" action="../server/script.php">
+        <h3 class="h3">Mettre à jour ou ajouter un profil:</h3>
+
+        <input type="text" name="profil" placeholder="Saisir un profil" />
+
+        <input class="btn" type="submit" value="Update-profil" name="action" />
+      </form>
+      <form method="GET" action="../server/script.php">
+        <h3 class="h3">Supprimer un profil</h3>
+
+        <select
+          id="select-profil"
+          class="select-profil"
+          name="profil-delete"
+          onfocus="requestProfilBackoffice()"
+        ></select>
+
+        <input
+          class="btn btn-submit"
+          type="submit"
+          value="Delete-profil"
+          name="action"
+        />
+      </form>
+    </section>
+    <script type="module"></script>
+    <script src="./script.js"></script>
+    <script type="module">
+      import { Option_profil_backoffice } from "./option_profil/script.js";
+      window.Option_profil_backoffice = Option_profil_backoffice;
+    </script>
+    <script src="../client/main.js"></script>
+  </body>
+</html>

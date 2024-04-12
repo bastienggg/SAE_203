@@ -1,0 +1,18 @@
+.card {
+  flex-shrink: 0;
+  /* animation: slider-3 70s ease-in-out infinite alternate; */
+}
+.card__img {
+  width: 15rem;
+  height: 9rem;
+}
+.card:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 54rem) {
+  .card__img {
+    width: 22.5rem;
+    height: 13.5rem;
+  }
+}

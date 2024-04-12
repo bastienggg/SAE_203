@@ -1,0 +1,62 @@
+.player-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.iframe {
+  height: 15rem;
+  width: 100%;
+}
+
+.card-player__playlist {
+  width: 80%;
+  margin: 1rem;
+  padding: 1rem;
+  color: var(--clr-grey-5);
+  background-color: var(--clr-grey-1);
+  border-radius: 3rem;
+  font-size: var(--fz-s);
+  font-weight: 500;
+}
+.card-player__playlist:hover {
+  transition: 0.2s ease-in-out;
+  border: solid 3px var(--clr-grey-1);
+  color: var(--clr-grey-1);
+  background-color: var(--clr-grey-5);
+  cursor: pointer;
+}
+
+.card-player__titre {
+  width: 100%;
+  color: var(--clr-grey-1);
+  font-weight: 700;
+  text-align: left;
+}
+
+.card__description {
+  color: var(--clr-opacity-50);
+  font-size: var(--fz-s);
+}
+
+@media screen and (min-width: 54rem) {
+  .player-card {
+    translate: 0 -18rem;
+  }
+  .iframe {
+    height: 33rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 68rem) {
+  .player-card {
+    translate: 0 -22rem;
+  }
+  .iframe {
+    height: 45rem;
+    width: 100%;
+  }
+}

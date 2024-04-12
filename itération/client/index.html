@@ -29,19 +29,9 @@
                 <option class="select__option" value="comedie">Comedie</option>
               </select>
           </div>
-          
-
-            
-
             <select id="select-profil" class="select select-profil" name="" id="" onfocus="requestProfil()"  onchange="recupererValeurProfil()">
-                
+              <!-- contenu dynamique -->
             </select>
-
-            
-            <!-- <button onclick="requestMoviesTrailer(2)" class="btn" >ALL</button> -->
-
-            
-            <!-- <a href="#">ALL</a> -->
           </header>
           <h1 class="title tendance-title">En Tendance</h1>
           <div class="carroussel" id="carroussel">
@@ -50,13 +40,8 @@
             <div class="player-cards" id="player-cards"> <!--contenu dynamique--></div>
             <div class="cards" id="cards"> <!-- contenu dynamique --></div>
             <div class="cards-playlist" id="cards-playlist"> <!-- contenu dynamique --></div>
-            
           </main>
-
-          
-
         </section>
-
         <script type="module">
             import {Menu} from './component/menu/script.js';
             window.Menu = Menu;
