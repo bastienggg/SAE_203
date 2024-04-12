@@ -1,3 +1,6 @@
+body {
+  user-select: none;
+}
 .card__title {
   margin: var(--margin-bottom);
   color: var(--clr-highlight);
@@ -142,4 +145,53 @@
   letter-spacing: 0.5rem;
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: var(--clr-stroke);
+}
+
+.box {
+  position: relative;
+  display: flex;
+}
+
+.input {
+  padding: 0.1rem;
+  width: 10rem;
+  height: 2rem;
+  background: none;
+  border: 2px solid black;
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-size: 0.75rem;
+  color: black;
+  font-weight: 700;
+  outline: none;
+  transition: 0.5s;
+}
+.input:focus {
+  background: lightslategray;
+}
+.input[type="text"]::placeholder {
+  color: black;
+}
+.box:hover .input {
+  width: 20rem;
+  background: none;
+  border-radius: 1.5rem;
+}
+.box i {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  color: black;
+  transition: 0.2s;
+}
+.box:hover i {
+  opacity: 0;
+  z-index: -1;
+}
+.titre-section {
+  padding: 0.5rem;
+  color: black;
+  font-size: 2rem;
 }

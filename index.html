@@ -22,15 +22,48 @@
       }
       h1 {
         font-size: 3em;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
         color: #007bff;
       }
       p {
         font-size: 1.2em;
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
       }
       .countdown {
         font-size: 1.5em;
+      }
+      .btn {
+        width: 25rem;
+        border: solid 6px #007bff;
+        margin: 1rem;
+        height: min-content;
+        padding: 0.5rem;
+        background-color: #007bff;
+        color: white;
+        border-radius: 3rem;
+        letter-spacing: 0.2rem;
+        font-weight: 500;
+        text-align: center;
+        font-size: 1.5rem;
+        text-decoration: none;
+      }
+
+      .btn:hover {
+        border: solid 6px #007bff;
+        background-color: white;
+        color: #007bff;
+        scale: 1.05;
+        transition: ease-in-out 0.2s;
+        cursor: pointer;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+      .container {
+        margin: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
       }
     </style>
   </head>
@@ -41,12 +74,24 @@
       <div class="countdown">
         <p id="countdown"></p>
       </div>
-      <a href="./client/index.html">Mon site</a>
+      <div class="container">
+        <h3>Itération 8</h3>
+        <a href="./itération/client/index.html" class="btn">Client</a>
+        <a href="./itération/backoffice/index.html" class="btn">Backoffice</a>
+      </div>
+      <div class="container">
+        <h3>Itération surprise</h3>
+        <a href="./itération_surprise/client/index.html" class="btn">Client</a>
+        <a href="./itération_surprise/backoffice/index.html" class="btn"
+          >Backoffice</a
+        >
+        <a href="./rapport.html" class="btn">Rapport</a>
+      </div>
     </div>
 
     <script>
       // Date de lancement du site (modifiable)
-      var launchDate = new Date("2024-04-12T12:00:00Z");
+      var launchDate = new Date("2024-04-12T23:59:59Z");
 
       function updateCountdown() {
         var now = new Date();

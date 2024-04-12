@@ -1,13 +1,9 @@
 # SAE_203
 
-20/03
-
-9h :
 Création du dossier avec les itérations qui sert de labs de test
 Écriture du resets.css
 Écriture du index html de la ^premiére itération qui sert de test
 
-10h:
 Commencement avant les base de donnés
 
 todo list :
@@ -24,15 +20,12 @@ model.php
 plus de getMenue mais get Movies (fait)
 requete qui vas apparaitre "select \* from Movies" (fait)
 
-10h - 14h55
 Creation du code permettant d'appeler tout les film grace a un boutton "ALL"
 
-16h
 Back office fonctionnel pour l'ajout de film
 
 # creation de la deuxiéme branche pour l'itération_2
 
-21h30
 TODO :
 Lorsque l’on clique sur un des films présents dans la zone d’affichage, celle-ci est mise à jour pour faire apparaître le trailer du film sur lequel on a cliqué. Pour faire à nouveau apparaître tous les films dans la zone d’affichage, on cliquera sur “All” comme décrit lors de la précédente itération.
 
@@ -44,28 +37,18 @@ Lorsque l’on clique sur l’élément HTML qui contient l’affichage d’un f
 
 écriture du requestMoviesTrailer() dans le main.js
 
-22h11:
 j'arrive a faire apparaitre mes tout mes template test en appuyant sur un boutton
 
-22h30:
-ff
-
-22h50
 je reussit en avoir ma template qui aparait en fonction de l'id mis dans la fonction qui se déclenche lors du onclick du bdeuxiéme boutton qui servait de test
 
-23h10
 j'arrive a load ma template designer correctement qui intergre la video youtube de trailler cepandant je la fait apparaire en bas de la page je ne sait pas comment je peux faire pour que cette template remplace l'ancienne...
 
-23h30
 creation de variable de style
 
-29 mars
-9h :
 LA deuxiéme itération fonctionne lorsque l'on clique sur une card cela nous met en display none les cards pour avoir que le trailer et incersement ca nous raffiche tout eles carte quand on reappuis sur le boutton "ALL".
 
 # Itération 3 Pouvoir filtrer l’affichage des films selon leur catégorie.
 
-9h10:
 TODO - front :
 Le menu permet désormais de choisir si l’on veut afficher tous les films ou bien uniquement les films d’une catégorie donnée (par exemple : Fantasy, Comedy, Sci-Fi, Animation, etc…) Vous pouvez par exemple ajouter des boutons ou bien utiliser un élément <select> pour que votre menu ne soit pas dépendant du nombre de catégories. Cette solution vous est recommandée. L’option “All” fait partie des options de votre <select> si l’utilisateur ne souhaite pas filtrer. Et c’est l’option par défaut.
 
@@ -82,27 +65,19 @@ un identifiant unique
 un nom de catégorie
 Toujours via phpMyAdmin, vous ajouterez quelques catégories dans cette table, à minima celles qui correspondent aux films déjà enregistrés dans la table Movie.Vous ajouterez ensuite une colonne id_category à la table Movie. Cette colonne fait référence à un identifiant de catégorie présent dans la table Category.
 
-9h50:
 base de données modifier qui fonctionne avec la clef etrangére qui fait reference a unecatégorie dans une table Movies_catégories
 
-10h20:
 j'arrive a lancer une fonction en particuler par rapport au select
 
-11h10:
 Fin de la partie client
 debut du bac office
 
-20h50:
 un peu de css
 
-30 mars:
 ajout de film a la base de données
 
 # Itération 4 Avoir des profils utilisateur.
 
-31 mars
-
-13h
 TODO:
 Site vitrine:
 Un (autre) élément <select> permet de choisir un des profils utilisateur présents dans la base de données. Le profil sélectionné sera le profil “actif” (voir itération 5).
@@ -111,7 +86,6 @@ Un second formulaire permet à l’administrateur d’ajouter un profil utilisat
 
 ajout de la table userprofil a la base de donne qui contient un id_user ainsi que le pseudo de l'utilsateur.
 
-15h
 itération 4 fini
 le select sur la page client pour choisir le profil est dynamique
 
@@ -129,16 +103,18 @@ Pour matérialiser cette association, créez une table Playlist avec une colonne
 
 Backoffice rien a changer
 
-02 avril
-10h30:
 la fonction AddToPlaylist fonctionne
 
-15h20:
 fini
 
 # Itération 6 Pouvoir retirer un film de la liste de lecture d’un profil utilisateur
 
-15h30:
 fini
 
 # itération 7 Pouvoir supprimer un profil utilisateur depuis le back office.
+
+fini
+
+# fin
+
+L'itération 8 ne fonctionne pas je n'est pas reussit a le rendre dynamique cepaendant j'ai quand même fait la barre de recherche

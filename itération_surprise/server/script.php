@@ -146,6 +146,12 @@ try {
     exit;
 }
 
+if (isset($_REQUEST['action']) && ($_REQUEST['action'] == 'getSearchbar') && isset ($_REQUEST["searchbar"]) && !empty($_REQUEST["searchbar"])){
+  $searchbar = $_REQUEST["searchbar"];
+  $main = getSearchbar($searchbar);
+  echo json_encode($main);
+  exit(); 
+}
 
 http_response_code(404);
 

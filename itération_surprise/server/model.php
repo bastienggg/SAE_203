@@ -101,3 +101,11 @@ function UpdateTendance($movie1, $movie2, $movie3){
     $res = $answer->rowCount();
     return $res;
 }
+
+function getSearchbar($search){
+    $cnx = new PDO("mysql:host=localhost;dbname=SAE203", "root", "4JaF:bt33$4mH");
+        $searchbar = $_REQUEST['searchbar'];
+        $answer = $cnx->query("SELECT * FROM Movies WHERE titre LIKE '%$searchbar%'OR realisateur LIKE '%$searchbar%' OR annee LIKE '%$searchbar%'"); 
+        $res = $answer->fetchAll(PDO::FETCH_OBJ);
+        return $res;
+}

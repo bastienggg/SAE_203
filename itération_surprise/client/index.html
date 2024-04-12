@@ -61,6 +61,8 @@
                 type="text"
                 class="input"
                 name="txt"
+                id="searchbar"
+                oninput="getSearchbar(value)"
                 onmouseout="this.value = ''; this.blur();"
                 placeholder="search"
               />
@@ -84,32 +86,38 @@
         <div class="carrousel-container">
           <!-- a rendre dynamique -->
           <div class="carrousel__items-container">
+            <img src="" alt="" />
             <img
-              src="../asset/img/carrousel/061332e7-bcfe-47ce-bc6c-9d752b5707d7-width2048-quality90.webp"
+              class="img"
+              src="../asset/img/carrousel/061332e7-bcfe-47ce-bc6c-9d752b5707d7-width2048-quality90-min.webp"
               alt=""
             />
           </div>
           <div class="carrousel__items-container">
             <img
-              src="../asset/img/carrousel/de392458-01d7-463c-9042-f62bffbf77a8-width2048-quality90.webp"
+              class="img"
+              src="../asset/img/carrousel/de392458-01d7-463c-9042-f62bffbf77a8-width2048-quality90-min.webp"
               alt=""
             />
           </div>
           <div class="carrousel__items-container">
             <img
-              src="../asset/img/carrousel/ed5f5498-d69a-485b-80c1-de9e7d67a0dd-width2048-quality90.webp"
+              class="img"
+              src="../asset/img/carrousel/ed5f5498-d69a-485b-80c1-de9e7d67a0dd-width2048-quality90-min.webp"
               alt=""
             />
           </div>
           <div class="carrousel__items-container">
             <img
-              src="../asset/img/carrousel/f75d107a-6cd7-4880-b6f2-0a1c788f9241-width2048-quality90.webp"
+              class="img"
+              src="../asset/img/carrousel/f75d107a-6cd7-4880-b6f2-0a1c788f9241-width2048-quality90-min.webp"
               alt=""
             />
           </div>
           <div class="carrousel__items-container">
             <img
-              src="../asset/img/carrousel/061332e7-bcfe-47ce-bc6c-9d752b5707d7-width2048-quality90.webp"
+              class="img"
+              src="../asset/img/carrousel/061332e7-bcfe-47ce-bc6c-9d752b5707d7-width2048-quality90-min.webp"
               alt=""
             />
           </div>
@@ -165,6 +173,12 @@
             />
             <p class="tv-direct__img-titre">Les filles d'a côté</p>
           </div>
+        </div>
+      </section>
+      <section id="categorie" class="section-catégorie search-section">
+        <h3 class="titre-section">RECHERCHE</h3>
+        <div class="search categorie-container" id="search">
+          <!-- contenu dynamique -->
         </div>
       </section>
       <section class="nos-film" id="section2">

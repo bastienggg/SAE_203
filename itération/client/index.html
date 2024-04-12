@@ -28,24 +28,38 @@
                 <option class="select__option" value="horreur">Horreur</option>
                 <option class="select__option" value="comedie">Comedie</option>
               </select>
+              <div class="box">
+              <form name="search">
+                <input
+                  type="text"
+                  class="input"
+                  name="txt"
+                  id="searchbar"
+                  oninput="getSearchbar(value)"
+                  onmouseout="this.value = ''; this.blur();"
+                  placeholder="search"
+                />
+              </form>
+              <i class="fas fa-search"></i>
+            </div>
           </div>
             <select id="select-profil" class="select select-profil" name="" id="" onfocus="requestProfil()"  onchange="recupererValeurProfil()">
               <!-- contenu dynamique -->
             </select>
           </header>
-          <h1 class="title tendance-title">En Tendance</h1>
-          <div class="carroussel" id="carroussel">
              <!-- contenu dynamique -->
+            </div>
+            <h1>RECHERCHE</h1>
+            <div class="search recherche" id="cards">
+              <!-- contenu dynamique -->
             </div>
             <div class="player-cards" id="player-cards"> <!--contenu dynamique--></div>
             <div class="cards" id="cards"> <!-- contenu dynamique --></div>
+            
             <div class="cards-playlist" id="cards-playlist"> <!-- contenu dynamique --></div>
           </main>
         </section>
         <script type="module">
-            import {Menu} from './component/menu/script.js';
-            window.Menu = Menu;
-
             import {Card} from './component/card/script.js';
             window.Card = Card;
 
@@ -57,9 +71,9 @@
 
             import {CardMoin } from './component/cardMoin/script.js';
             window.CardMoin  = CardMoin ;
-            import {Carroussel } from './component/carroussel/script.js';
-            window.Carroussel  = Carroussel ;
-            Carroussel.render('.carroussel')
+            // import {Carroussel } from './component/carroussel/script.js';
+            // window.Carroussel  = Carroussel ;
+            // Carroussel.render('.carroussel')
 
             requestMovies();
         </script>

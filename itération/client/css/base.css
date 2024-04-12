@@ -3,7 +3,6 @@
 @import "./utilities.css";
 @import "./framework.css";
 
-@import "../component/menu/style.css";
 @import "../component/card/style.css";
 @import "../component/player_card/style.css";
 @import "../component/option_profil/style.css";

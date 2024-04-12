@@ -156,3 +156,12 @@ let RemoveToPlaylist = async function (idmovie, iduser) {
     d5.style.display = "block";
 }
 
+let getSearchbar = async function () {
+    let d1 = document.getElementById("search");
+    d1.style.display = "flex";
+    let searchbar = document.querySelector("#searchbar").value;
+    let response = await fetch("../server/script.php?action=getSearchbar&searchbar=" + searchbar);
+    let data = await response.json();
+    console.log(data);
+    Card.render(".search", data);
+};

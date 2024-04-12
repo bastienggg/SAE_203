@@ -115,18 +115,10 @@ function UpdateTendance($movie1, $movie2, $movie3){
 }
 
 
-
-/*  deleteMenu
-
-    . paramètre $s : le numéro de la semaine demandée
-    . paramètre $j : le jour du menu concerné
-    > valeur de retour : le nombre de ligne modifié dans Repas (donc 1 si tout va bien, 0 sinon)
-
-    La fonction deleteMenu se connecte à votre BDD et supprime le menu du jour $j de la semaine $s.
-*/
-function deleteMenu($s, $j){
-    $cnx = new PDO("mysql:host=localhost;dbname=guitard25", "guitard25", "guitard25");
-    $answer = $cnx->query("delete from Repas where semaine='$s' and jour='$j'"); 
-    $res = $answer->rowCount();
-    return $res;
+function getSearchbar($search){
+    $cnx = new PDO("mysql:host=localhost;dbname=SAE203", "root", "4JaF:bt33$4mH");
+        $searchbar = $_REQUEST['searchbar'];
+        $answer = $cnx->query("SELECT * FROM Movies WHERE titre LIKE '%$searchbar%'OR realisateur LIKE '%$searchbar%' OR annee LIKE '%$searchbar%'"); 
+        $res = $answer->fetchAll(PDO::FETCH_OBJ);
+        return $res;
 }
